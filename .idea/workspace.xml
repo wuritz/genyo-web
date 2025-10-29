@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Helper/ScrollToTop.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Home/Footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Blog/Blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Blog/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Projects/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Resume/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Resume/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Services/Services.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Skills/Skills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Skills/Skills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,12 @@
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;wuritz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wuritz/genyo-web.git&quot;,
+    &quot;accountId&quot;: &quot;12186b77-77e7-4c75-9dbf-a804d6962f29&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -44,7 +57,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;revert&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -103,6 +116,8 @@
       <workItem from="1761690448651" duration="3234000" />
       <workItem from="1761725271200" duration="1380000" />
       <workItem from="1761746352868" duration="2862000" />
+      <workItem from="1761766663205" duration="171000" />
+      <workItem from="1761767033385" duration="1469000" />
     </task>
     <servers />
   </component>

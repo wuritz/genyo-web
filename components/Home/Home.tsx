@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react'
 import Hero from "@/components/Home/Hero/Hero";
 import Services from "@/components/Home/Services/Services";
@@ -23,9 +24,9 @@ const Home = () => {
                 once: true,
                 anchorPlacement: "top-bottom"
             });
-
-            initAOS();
         }
+
+        initAOS();
     }, []);
 
     return (

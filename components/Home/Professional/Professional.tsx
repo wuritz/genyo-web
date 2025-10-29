@@ -11,28 +11,28 @@ const Professional = () => {
             <div className={"w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center"}>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"}>
                     <ProfessionalCard
-                        icon={"/images/s1.png"}
+                        icon={"images/s1.png"}
                         name={"Professional"}
                         description={"Not everyone can make an addon like ours. It's the best after all."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"100"}>
                     <ProfessionalCard
-                        icon={"/images/s2.png"}
+                        icon={"images/s2.png"}
                         name={"Cool code and Things"}
                         description={"Russian developers have been verrry quiet since Genyo dropped..."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"200"}>
                     <ProfessionalCard
-                        icon={"/images/s3.png"}
+                        icon={"images/s3.png"}
                         name={"Funny & Vibes"}
                         description={"It feels so good to be a Genyo user. We have a 98.5% life-improving rate."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"300"}>
                     <ProfessionalCard
-                        icon={"/images/s1.png"}
+                        icon={"images/s1.png"}
                         name={"Look at these icons"}
                         description={"Do you really need any more convincing? Just download the thing."}
                     />

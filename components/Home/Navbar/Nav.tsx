@@ -32,7 +32,7 @@ const Nav = ({openNav}: Props) => {
                 {/* LOGO */}
                 <div className="flex items-center space-x-2">
                     <div className="w-15 h-15  rounded-full flex items-center justify-center flex-col">
-                        <Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} />
+                        <Image src={"images/genyo.png"} alt={"genyo"} width={100} height={100} />
                     </div>
                     <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">Genyo</h1>
                 </div>

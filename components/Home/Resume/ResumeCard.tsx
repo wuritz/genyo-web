@@ -1,6 +1,5 @@
 import React from 'react'
 import {IconType} from "react-icons";
-import {FaCodepen} from "react-icons/fa";
 
 type Props = {
     role: string;

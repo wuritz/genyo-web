@@ -6,7 +6,11 @@ import Link from "next/link";
 import {BiDownload} from "react-icons/bi";
 import {HiBars3BottomRight} from "react-icons/hi2";
 
-const Nav = () => {
+type Props = {
+    openNav: () => void;
+}
+
+const Nav = ({openNav}: Props) => {
 
     const [navBg, setNavBg] = useState(false);
 
@@ -53,7 +57,7 @@ const Nav = () => {
                     </button>
 
                     {/* Burger menu */}
-                    <HiBars3BottomRight className="w-8 h-8 cursor-pointer text-white"/>
+                    <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white"/>
                 </div>
             </div>
         </div>

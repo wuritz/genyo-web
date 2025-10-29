@@ -48,7 +48,7 @@ const Hero = () => {
 
                 <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
                 duration-300 cursor-pointer rounded-full text-lg font-medium">
-                    <a href={"#services"}><span>Not convinced?</span></a>
+                    <a href={"#professional"}><span>Not convinced?</span></a>
                     <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
                 </button>
             </div>

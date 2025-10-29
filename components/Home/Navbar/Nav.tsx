@@ -33,7 +33,7 @@ const Nav = ({openNav}: Props) => {
                     <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-col">
                         <FaCode className="w-5 h-5 text-black"/>
                     </div>
-                    <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold">GENYO</h1>
+                    <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">GENYO</h1>
                 </div>
 
                 {/* Nav links */}
@@ -57,7 +57,9 @@ const Nav = ({openNav}: Props) => {
                     </button>
 
                     {/* Burger menu */}
-                    <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white"/>
+                    <div className={"visible lg:hidden"}>
+                        <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white"/>
+                    </div>
                 </div>
             </div>
         </div>

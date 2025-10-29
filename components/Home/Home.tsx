@@ -1,16 +1,13 @@
 "use client";
 import React, { useEffect } from 'react'
 import Hero from "@/components/Home/Hero/Hero";
-import Services from "@/components/Home/Services/Services";
-import Resume from "@/components/Home/Resume/Resume";
-import Projects from "@/components/Home/Projects/Projects";
-import Skills from "@/components/Home/Skills/Skills";
-import ClientReview from "@/components/Home/ClientReview/ClientReview";
-import Blog from "@/components/Home/Blog/Blog";
-import Contact from "@/components/Home/Contact/Contact";
+import Professional from "@/components/Home/Professional/Professional";
+import Screenshots from "@/components/Home/Screenshots/Screenshots";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Features from "@/components/Home/Features/Features";
+import Download from "@/components/Home/Download/Download";
 
 const Home = () => {
 
@@ -32,13 +29,10 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <Hero />
-            <Services />
-            <Resume />
-            <Projects />
-            <Skills />
-            <ClientReview />
-            <Blog />
-            <Contact />
+            <div id={"professional"}><Professional /></div>
+            <div id={"features"}><Features /></div>
+            <div id={"screenshots"}><Screenshots /></div>
+            <div id={"download"}><Download /></div>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import {NavLinks} from "@/constant/constant";
 import Link from "next/link";
 import {BiDownload} from "react-icons/bi";
 import {HiBars3BottomRight} from "react-icons/hi2";
+import Image from "next/image";
 
 type Props = {
     openNav: () => void;
@@ -30,10 +31,10 @@ const Nav = ({openNav}: Props) => {
             <div className="flex items-center h-full justify-between w-[90%] mx-auto">
                 {/* LOGO */}
                 <div className="flex items-center space-x-2">
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-col">
-                        <FaCode className="w-5 h-5 text-black"/>
+                    <div className="w-15 h-15  rounded-full flex items-center justify-center flex-col">
+                        <Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} />
                     </div>
-                    <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">GENYO</h1>
+                    <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">Genyo</h1>
                 </div>
 
                 {/* Nav links */}
@@ -53,7 +54,7 @@ const Nav = ({openNav}: Props) => {
                     <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
                     transition-all duration-300 text-white flex items-center space-x-2">
                         <BiDownload className="w-5 h-5" />
-                        <span>Download CV</span>
+                        <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>Download</a>
                     </button>
 
                     {/* Burger menu */}

@@ -7,7 +7,7 @@ type Props = {
     description: string;
 }
 
-const ServiceCard = ({icon, name, description}: Props) => {
+const ProfessionalCard = ({icon, name, description}: Props) => {
     return (
         <div>
             <Image src={icon} alt={"img"} width={60} height={60} />
@@ -17,4 +17,4 @@ const ServiceCard = ({icon, name, description}: Props) => {
     );
 };
 
-export default ServiceCard
+export default ProfessionalCard

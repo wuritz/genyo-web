@@ -41,7 +41,7 @@ export default function ParticlesHero() {
                     onHover: { enable: true, mode: "repulse" },
                 },
                 modes: {
-                    push: { quantity: 4 },
+                    push: { quantity: 1 },
                     repulse: { distance: 100, duration: 0.4 },
                 },
             },

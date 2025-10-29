@@ -1,44 +1,44 @@
 import React from 'react'
-import ServiceCard from "@/components/Home/Services/ServiceCard";
+import ProfessionalCard from "@/components/Home/Professional/ProfessionalCard";
 
-const Services = () => {
+const Professional = () => {
     return (
-        <div className={"pt-16 pb-16"}>
+        <div className={"pt-16 pb-16 bg-[#0a0a1a]"}>
             <h1 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
-                Collaborate with brands <br /> and agencies to create <br /> impactful results
+                We are super professional. <br /> Here&apos;s why...
             </h1>
 
             <div className={"w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 mt-20 items-center"}>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"}>
-                    <ServiceCard
+                    <ProfessionalCard
                         icon={"/images/s1.png"}
-                        name={"UI and UX"}
-                        description={"Designing interfaces that are intuitive, efficient and enjoyable to use."}
+                        name={"Professional"}
+                        description={"Not everyone can make an addon like ours. It's the best after all."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"100"}>
-                    <ServiceCard
+                    <ProfessionalCard
                         icon={"/images/s2.png"}
-                        name={"Web and Mobile App"}
-                        description={"Designing interfaces that are intuitive, efficient and enjoyable to use."}
+                        name={"Cool code and Things"}
+                        description={"Russian developers have been verrry quiet since Genyo dropped..."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"200"}>
-                    <ServiceCard
+                    <ProfessionalCard
                         icon={"/images/s3.png"}
-                        name={"Design & Creative"}
-                        description={"Designing interfaces that are intuitive, efficient and enjoyable to use."}
+                        name={"Funny & Vibes"}
+                        description={"It feels so good to be a Genyo user. We have a 98.5% life-improving rate."}
                     />
                 </div>
                 <div data-aos={"fade-right"} data-aos-anchor-placement={"top-center"} data-aos-delay={"300"}>
-                    <ServiceCard
+                    <ProfessionalCard
                         icon={"/images/s1.png"}
-                        name={"Development"}
-                        description={"Designing interfaces that are intuitive, efficient and enjoyable to use."}
+                        name={"Look at these icons"}
+                        description={"Do you really need any more convincing? Just download the thing."}
                     />
                 </div>
             </div>
         </div>
     )
 }
-export default Services
+export default Professional

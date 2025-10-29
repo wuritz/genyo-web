@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import {BsArrowRight} from "react-icons/bs";
+import {BsArrowDown, BsArrowDownCircle, BsArrowRight} from "react-icons/bs";
 import ParticlesHero from "@/components/Home/Hero/ParticleBackground";
 
 const Hero = () => {
@@ -14,25 +14,28 @@ const Hero = () => {
 
             <div className="relative z-10 flex flex-col items-center">
                 <Image
-                    src="/images/s1.jpg"
+                    src="/images/genyo_sc.png"
                     alt="heroimage"
-                    width={150}
-                    height={150}
-                    className="rounded-full border-8 border-[#0c0c48aa]"
+                    width={480}
+                    height={252}
+                    className="rounded-md"
                     data-aos={"fade-up"}
                 />
-                <h1 data-aos={"fade-up"} data-aos-delay={"200"} className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide">
-                    Creating web products, <br /> brands,
-                    <span className="text-cyan-200"> and experiences.</span>
+                <h1 data-aos={"fade-up"} data-aos-delay={"200"} className="text-xl sm:text-2xl md:text-4xl lg:text-5xl mt-6 text-center font-bold tracking-wide">
+                    The best <span className={"text-purple-400"}>Meteor</span> addon
                 </h1>
-                <h2 data-aos={"fade-up"} data-aos-delay={"400"} className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
-                    Hi! I&#39;m Black - A passionate
+
+                <h2 data-aos={"fade-up"} data-aos-delay={"400"} className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
+                    powered by {" "}
                     <span className="text-cyan-200 font-bold">
                         <Typewriter options={{
                             strings: [
-                                ' Frontend Developer',
-                                ' Backend Developer',
-                                ' Web Developer'
+                                'special people',
+                                'idk',
+                                'John Genyo',
+                                'everyone',
+                                'noone',
+                                'special minds'
                             ],
                             autoStart: true,
                             loop: true,
@@ -45,8 +48,8 @@ const Hero = () => {
 
                 <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
                 duration-300 cursor-pointer rounded-full text-lg font-medium">
-                    <span>See my work</span>
-                    <BsArrowRight className="w-5 h-5 ml-2 inline-block" />
+                    <a href={"#services"}><span>Not convinced?</span></a>
+                    <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
                 </button>
             </div>
         </div>

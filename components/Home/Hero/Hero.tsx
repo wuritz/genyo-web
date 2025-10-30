@@ -51,6 +51,10 @@ const Hero = () => {
                     <a href={"#professional"}><span>Not convinced?</span></a>
                     <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
                 </button>
+
+                <h3 className={"text-gray-400 mt-4 text-sm"}>
+                    Written for 1.21.4 (and 1.21.5)
+                </h3>
             </div>
         </div>
     )

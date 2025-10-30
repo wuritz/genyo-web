@@ -14,15 +14,15 @@ const Hero = () => {
 
             <div className="relative z-10 flex flex-col items-center">
                 <Image
-                    src="/images/genyo_sc.png"
+                    src="/images/genyo.png"
                     alt="heroimage"
-                    width={480}
-                    height={252}
+                    width={200}
+                    height={200}
                     className="rounded-md"
                     data-aos={"fade-up"}
                 />
                 <h1 data-aos={"fade-up"} data-aos-delay={"200"} className="text-xl sm:text-2xl md:text-4xl lg:text-5xl mt-6 text-center font-bold tracking-wide">
-                    The best <span className={"text-purple-400"}>Meteor</span> addon
+                    The best <span className={"text-purple-400"}>Meteor</span> addon ever
                 </h1>
 
                 <h2 data-aos={"fade-up"} data-aos-delay={"400"} className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
@@ -46,11 +46,14 @@ const Hero = () => {
                     </span>
                 </h2>
 
-                <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
-                duration-300 cursor-pointer rounded-full text-lg font-medium">
-                    <a href={"#professional"}><span>Not convinced?</span></a>
-                    <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
-                </button>
+                <a href={"#professional"}>
+                    <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
+                    duration-300 cursor-pointer rounded-full text-lg font-medium"
+                    >
+                        <span>Not convinced?</span>
+                        <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
+                    </button>
+                </a>
 
                 <h3 data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >
                     Written for 1.21.4 (and 1.21.5)

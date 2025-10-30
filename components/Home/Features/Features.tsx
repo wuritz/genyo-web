@@ -79,7 +79,9 @@ const Features = () => {
             <h2 className={"text-white text-center text-xs"}>
             </h2>
 
-            <div className={"w-[80%] md:w-[70%] md:mt-15 mt-5 lg-w[70%] mx-auto grid grid-rows-1 items-center bg-blue-600/10 md:p-15 p-2 overflow-x-auto lg:[overflow: none;] pt-0 rounded-2xl"}>
+            <div className={"w-[80%] md:w-[70%] md:mt-15 mt-5 lg-w[70%] mx-auto grid grid-rows-1 items-center bg-blue-600/10 md:p-15 p-2 overflow-x-auto lg:[overflow: none;] pt-0 rounded-2xl"}
+                 data-aos={"fade-up"} data-aos-delay={"100"}
+            >
                 {/* Selector */}
                 <div>
                     {CategoryButtons()}

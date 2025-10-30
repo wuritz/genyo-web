@@ -27,7 +27,7 @@ const Nav = ({openNav}: Props) => {
     }, []);
 
     return (
-        <div className={`transition-all ${navBg ? 'bg-[#0f142ed9] shadow-md':'fixed'} duration-200 h-[12vh] z-[10000] fixed w-full`}>
+        <div className={`transition-all ${navBg ? 'bg-[#0f142ed9]/70 shadow-md':'fixed'} duration-200 h-[10vh] z-[10000] fixed w-full`}>
             <div className="flex items-center h-full justify-between w-[90%] mx-auto">
                 {/* LOGO */}
                 <div className="flex items-center space-x-2">
@@ -42,7 +42,7 @@ const Nav = ({openNav}: Props) => {
                 {/* Nav links */}
                 <div className="hidden lg:flex items-center space-x-10">
                     {NavLinks.map((link) => {
-                        return <Link key={link.id} href={link.url} className="text-base hover:text-cyan-300 text-white font-medium
+                        return <Link key={link.id} href={link.url} target={link.target} className="text-base hover:text-cyan-300 text-white font-medium
                         transition-all duration-200">
 
                             <p>{link.label}</p>
@@ -52,19 +52,14 @@ const Nav = ({openNav}: Props) => {
 
                 {/* Buttons */}
                 <div className="flex items-center space-x-2">
-                    {/* Discord button */}
-                    <button className="px-5 hidden md:visible py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600/40 hover:bg-blue-600/50
-                    transition-all duration-300 text-white flex items-center space-x-2">
-                        <FaDiscord className="w-5 h-5" />
-                        <a href={"https://discord.gg/5nrEVnm6zJ"} target={"_blank"}>Discord</a>
-                    </button>
-
                     {/* Download button */}
-                    <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
-                    transition-all duration-300 text-white flex items-center space-x-2">
-                        <BiDownload className="w-5 h-5" />
-                        <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>Download</a>
-                    </button>
+                    <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>
+                        <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
+                        transition-all duration-300 text-white flex items-center space-x-2">
+                            <BiDownload className="w-5 h-5 mr-2" />
+                            Download
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

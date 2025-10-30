@@ -18,6 +18,12 @@ export const NavLinks = [
         id: 4,
         url: '#screenshots',
         label: 'Screenshots'
+    },
+    {
+        id: 5,
+        url: "https://discord.gg/5nrEVnm6zJ",
+        label: "Join Discord",
+        target: "_blank",
     }
 ];
 

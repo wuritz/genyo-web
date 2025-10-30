@@ -41,9 +41,9 @@ const Screenshots = () => {
                     autoPlaySpeed={2000}
                 >
                     <ScreenshotCard image={"/images/sc_1.png"} />
+                    <ScreenshotCard image={"/images/genyo_sc.png"} />
                     <ScreenshotCard image={"/images/sc_1.png"} />
-                    <ScreenshotCard image={"/images/sc_1.png"} />
-                    <ScreenshotCard image={"/images/sc_1.png"} />
+                    <ScreenshotCard image={"/images/genyo_sc.png"} />
                     <ScreenshotCard image={"/images/sc_1.png"} />
                 </Carousel>;
             </div>

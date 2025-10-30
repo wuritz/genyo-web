@@ -51,7 +51,7 @@ const Nav = ({openNav}: Props) => {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-2">
                     {/* Discord button */}
                     <button className="px-5 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600/40 hover:bg-blue-600/50
                     transition-all duration-300 text-white flex items-center space-x-2">

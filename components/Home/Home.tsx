@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Features from "@/components/Home/Features/Features";
 import Download from "@/components/Home/Download/Download";
+import FeaturesV2 from "@/components/Home/Features/FeaturesV2";
 
 const Home = () => {
 
@@ -30,7 +31,8 @@ const Home = () => {
         <div className="overflow-hidden">
             <div id={"home"}><Hero /></div>
             <div id={"professional"}><Professional /></div>
-            <div id={"features"}><Features /></div>
+            <div><Features /></div>
+            <div id={"features"}><FeaturesV2 /></div>
             <div id={"screenshots"}><Screenshots /></div>
             <div id={"download"}><Download /></div>
         </div>

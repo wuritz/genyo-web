@@ -53,7 +53,7 @@ const Nav = ({openNav}: Props) => {
                 {/* Buttons */}
                 <div className="flex items-center space-x-2">
                     {/* Discord button */}
-                    <button className="px-5 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600/40 hover:bg-blue-600/50
+                    <button className="px-5 hidden md:visible py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600/40 hover:bg-blue-600/50
                     transition-all duration-300 text-white flex items-center space-x-2">
                         <FaDiscord className="w-5 h-5" />
                         <a href={"https://discord.gg/5nrEVnm6zJ"} target={"_blank"}>Discord</a>
@@ -65,11 +65,6 @@ const Nav = ({openNav}: Props) => {
                         <BiDownload className="w-5 h-5" />
                         <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>Download</a>
                     </button>
-
-                    {/* Burger menu */}
-                    <div className={"visible lg:hidden"}>
-                        <HiBars3BottomRight onClick={openNav} className="w-8 h-8 cursor-pointer text-white"/>
-                    </div>
                 </div>
             </div>
         </div>

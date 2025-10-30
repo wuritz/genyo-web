@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import {BsArrowDown, BsArrowDownCircle, BsArrowRight} from "react-icons/bs";
+import {BsArrowDownCircle} from "react-icons/bs";
 import ParticlesHero from "@/components/Home/Hero/ParticleBackground";
 
 const Hero = () => {
@@ -52,7 +52,7 @@ const Hero = () => {
                     <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
                 </button>
 
-                <h3 className={"text-gray-400 mt-4 text-sm"}>
+                <h3 data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >
                     Written for 1.21.4 (and 1.21.5)
                 </h3>
             </div>

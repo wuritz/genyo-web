@@ -1,6 +1,6 @@
 "use client";
 import React, {useEffect, useState} from 'react'
-import {FaCode} from "react-icons/fa";
+import {FaCode, FaDiscord} from "react-icons/fa";
 import {NavLinks} from "@/constant/constant";
 import Link from "next/link";
 import {BiDownload} from "react-icons/bi";
@@ -52,7 +52,14 @@ const Nav = ({openNav}: Props) => {
 
                 {/* Buttons */}
                 <div className="flex items-center space-x-4">
-                    {/* CV button */}
+                    {/* Discord button */}
+                    <button className="px-5 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-600/40 hover:bg-blue-600/50
+                    transition-all duration-300 text-white flex items-center space-x-2">
+                        <FaDiscord className="w-5 h-5" />
+                        <a href={"https://discord.gg/5nrEVnm6zJ"} target={"_blank"}>Discord</a>
+                    </button>
+
+                    {/* Download button */}
                     <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
                     transition-all duration-300 text-white flex items-center space-x-2">
                         <BiDownload className="w-5 h-5" />

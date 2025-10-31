@@ -3,7 +3,7 @@ import ProfessionalCard from "@/components/Home/Professional/ProfessionalCard";
 
 const Professional = () => {
     return (
-        <div className={"pt-16 pb-16 bg-[#0a0a1a]"}>
+        <div className={"pt-16 pb-5 bg-[#0a0a1a]"}>
             <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white hover:text-cyan-100 transition-all duration-300"}>
                 We are super professional. <br /> Here&apos;s why...
             </h2>

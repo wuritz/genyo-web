@@ -26,7 +26,7 @@ const responsive = {
 const Screenshots = () => {
     return (
         <div className={"pt-10 pb-10 xl:pt-16 xl:pb-16 bg-[#0b0b17]"}>
-            <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
+            <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white hover:text-cyan-100 transition-all duration-300"}>
                 Screenshots
             </h2>
 

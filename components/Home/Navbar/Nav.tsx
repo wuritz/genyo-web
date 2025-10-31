@@ -6,6 +6,7 @@ import Link from "next/link";
 import {BiDownload} from "react-icons/bi";
 import {HiBars3BottomRight} from "react-icons/hi2";
 import Image from "next/image";
+import {MdOpenInNew} from "react-icons/md";
 
 type Props = {
     openNav: () => void;
@@ -31,10 +32,10 @@ const Nav = ({openNav}: Props) => {
             <div className="flex items-center h-full justify-between w-[90%] mx-auto">
                 {/* LOGO */}
                 <div className="flex items-center space-x-2">
-                    <div className="w-15 h-15  rounded-full flex items-center justify-center flex-col">
+                    <div className={`w-15 h-15 hidden sm:block rounded-full flex items-center justify-center flex-col transition-all duration-600`}>
                         <a href={"#home"}><Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} /></a>
                     </div>
-                    <h2 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">
+                    <h2 className={`text-2xl md:text-4xl text-white font-bold ml-5 transition-all duration-600`}>
                         <a href={"#home"}>Genyo</a>
                     </h2>
                 </div>

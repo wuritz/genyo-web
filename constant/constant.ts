@@ -1,16 +1,21 @@
 export const NavLinks = [
     {
         id: 1,
-        url: '#what',
-        label: 'What is Genyo?'
+        url: '/',
+        label: 'Home'
     },
     {
         id: 2,
-        url: '#features',
-        label: 'Features'
+        url: '/#what',
+        label: 'What is Genyo?'
     },
     {
         id: 3,
+        url: '/features',
+        label: 'Features'
+    },
+    {
+        id: 4,
         url: "https://discord.gg/5nrEVnm6zJ",
         label: "Discord",
         target: "_blank",

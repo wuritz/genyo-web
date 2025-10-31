@@ -9,7 +9,7 @@ const What = () => {
             </h2>
 
             <div className={"grid grid-cols-1 xl:grid-cols-3 mx-auto w-[85%] xl:w-[70%] pt-10 xl:pt-20 gap-10"}>
-                <article>
+                <article data-aos={"fade-up"} data-aos-delay={"0"}>
                     <h3 className={"text-white font-semibold text-xl xl:text-4xl hover:text-purple-400 transition-all duration-300"}>
                         Purpose
                     </h3>
@@ -21,14 +21,14 @@ const What = () => {
                     </p>
                 </article>
 
-                <article>
+                <article data-aos={"fade-up"} data-aos-delay={"100"}>
                     <h3 className={"text-white font-semibold text-xl xl:text-4xl hover:text-amber-200 transition-all duration-300"}>Why should I care?</h3>
                     <p className={"text-gray-400 text-md xl:text-lg mt-2 xl:mt-7 hover:text-[#07070f] transition-all duration-300"}>
                         Idk.
                     </p>
                 </article>
 
-                <article>
+                <article data-aos={"fade-up"} data-aos-delay={"200"}>
                     <h3 className={"text-white font-semibold text-xl xl:text-4xl hover:text-green-400 transition-all duration-500"}>Hulkenberg</h3>
                     <p className={"text-gray-400 text-md xl:text-lg mt-2 xl:mt-7"}>
                         Yeeeeeeeeeeeeeees.

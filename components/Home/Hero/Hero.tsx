@@ -22,7 +22,7 @@ const Hero = () => {
                     data-aos={"fade-up"}
                 />
                 <h1 data-aos={"fade-up"} data-aos-delay={"200"} className="text-xl sm:text-2xl md:text-4xl lg:text-5xl mt-6 text-center font-bold tracking-wide">
-                    The best <span className={"text-purple-400"}>Meteor</span> addon ever
+                    The best <span className={"text-purple-400 hover:text-purple-500 transition-all duration-300"}><a href={"https://meteorclient.com"} target={"_blank"}>Meteor</a></span> addon ever
                 </h1>
 
                 <h2 data-aos={"fade-up"} data-aos-delay={"400"} className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">

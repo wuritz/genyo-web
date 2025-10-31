@@ -33,10 +33,10 @@ const Nav = ({openNav}: Props) => {
                 {/* LOGO */}
                 <div className="flex items-center space-x-2">
                     <div className={`w-15 h-15 hidden sm:block rounded-full flex items-center justify-center flex-col transition-all duration-600`}>
-                        <a href={"#home"}><Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} /></a>
+                        <a href={"/"}><Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} /></a>
                     </div>
                     <h2 className={`text-2xl md:text-4xl text-white font-bold ml-5 transition-all duration-600`}>
-                        <a href={"#home"}>Genyo</a>
+                        <a href={"/"}>Genyo</a>
                     </h2>
                 </div>
 

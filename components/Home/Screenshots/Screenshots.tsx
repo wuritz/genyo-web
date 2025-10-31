@@ -25,14 +25,14 @@ const responsive = {
 
 const Screenshots = () => {
     return (
-        <div className={"pt-16 pb-16 bg-[#0b0b17]"}>
-            <h1 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
+        <div className={"pt-10 pb-10 xl:pt-16 xl:pb-16 bg-[#0b0b17]"}>
+            <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
                 Screenshots
-            </h1>
+            </h2>
 
-            <div className={"mt-16 w-[90%] mx-auto"}>
+            <div className={"mt-5 xl:mt-16 w-[90%] mx-auto"}>
                 <Carousel
-                    showDots={true}
+                    showDots={false}
                     responsive={responsive}
 
                     infinite={true}

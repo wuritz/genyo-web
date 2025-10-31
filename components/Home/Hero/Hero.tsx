@@ -25,8 +25,8 @@ const Hero = () => {
                     The best <span className={"text-purple-400"}>Meteor</span> addon ever
                 </h1>
 
-                <h2 data-aos={"fade-up"} data-aos-delay={"400"} className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
-                    powered by {" "}
+                <p data-aos={"fade-up"} data-aos-delay={"400"} className="mt-2 text-sm px-2 text-center sm:text-2xl font-medium flex items-center">
+                    powered by
                     <span className="text-cyan-200 font-bold">
                         <Typewriter options={{
                             strings: [
@@ -44,7 +44,7 @@ const Hero = () => {
                             wrapperClassName: 'pl-2'
                         }} />
                     </span>
-                </h2>
+                </p>
 
                 <a href={"#professional"}>
                     <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
@@ -55,9 +55,9 @@ const Hero = () => {
                     </button>
                 </a>
 
-                <h3 data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >
+                <p data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >
                     Written for 1.21.4 (and 1.21.5)
-                </h3>
+                </p>
             </div>
         </div>
     )

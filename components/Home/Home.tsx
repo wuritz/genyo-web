@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Download from "@/components/Home/Download/Download";
 import Features from "@/components/Home/Features/Features";
+import Team from "@/components/Home/Team/Team";
 
 const Home = () => {
 
@@ -32,6 +33,7 @@ const Home = () => {
             <div id={"professional"}><Professional /></div>
             <div id={"features"}><Features /></div>
             <div id={"screenshots"}><Screenshots /></div>
+            <div id={"team"}><Team /></div>
             <div id={"download"}><Download /></div>
         </div>
     )

@@ -1,26 +1,16 @@
 export const NavLinks = [
     {
         id: 1,
-        url: '#home',
-        label: 'Home'
-    },
-    {
-        id: 2,
-        url: '#professional',
-        label: 'Professional'
-    },
-    {
-        id: 3,
         url: '#features',
         label: 'Features'
     },
     {
-        id: 4,
+        id: 2,
         url: '#screenshots',
         label: 'Screenshots'
     },
     {
-        id: 5,
+        id: 3,
         url: "https://discord.gg/5nrEVnm6zJ",
         label: "Join Discord",
         target: "_blank",

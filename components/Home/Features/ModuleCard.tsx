@@ -19,9 +19,9 @@ const ModuleCard = ({name, desc, Icon}: Props) => {
                     </div>
                 </div>
 
-                <h1 className={"text-gray-200 text-xs sm:text-lg mt-1 md:mt-1.5 font-semibold"}>
+                <p className={"text-gray-200 text-xs sm:text-lg mt-3 md:mt-1.5 font-semibold"}>
                     {name}
-                </h1>
+                </p>
             </div>
         </div>
     )

@@ -4,10 +4,10 @@ import {FaDiscord} from "react-icons/fa";
 
 const Download = () => {
     return (
-        <div className={"pt-16 pb-16"}>
-            <h1 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
+        <div className={"py-10 xl:py-16 bg-[#0b0b17]"}>
+            <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"}>
                 Try it out!
-            </h1>
+            </h2>
 
             <div className={"flex justify-center items-center mt-7"}>
                 <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>

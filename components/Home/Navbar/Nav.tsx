@@ -34,9 +34,9 @@ const Nav = ({openNav}: Props) => {
                     <div className="w-15 h-15  rounded-full flex items-center justify-center flex-col">
                         <a href={"#home"}><Image src={"/images/genyo.png"} alt={"genyo"} width={100} height={100} /></a>
                     </div>
-                    <h1 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">
+                    <h2 className="text-x1 hidden sm:block md:text-2xl text-white font-bold ml-5">
                         <a href={"#home"}>Genyo</a>
-                    </h1>
+                    </h2>
                 </div>
 
                 {/* Nav links */}

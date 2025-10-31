@@ -47,12 +47,13 @@ const Hero = () => {
                 </h2>
 
                 <a href={"#professional"}>
-                    <button data-aos={"fade-up"} data-aos-delay={"600"} className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all
-                    duration-300 cursor-pointer rounded-full text-lg font-medium"
-                    >
-                        <span>Not convinced?</span>
-                        <BsArrowDownCircle className="w-5 h-5 ml-2 inline-block" />
-                    </button>
+                    <div className={"flex flex-row justify-start items-center gap-2 pl-5 pr-5 pt-3 pb-3 mt-5 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full"}
+                         data-aos={"fade-up"} data-aos-delay={"600"}>
+                        <p className="text-lg text-white font-medium">
+                            Not convinced?
+                        </p>
+                        <BsArrowDownCircle className="w-5 h-5" />
+                    </div>
                 </a>
 
                 <p data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >

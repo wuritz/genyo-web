@@ -8,9 +8,9 @@ const Team = () => {
                 Dev Team
             </h2>
 
-            <div className={"flex flex-wrap items-center justify-center gap-5 xl:gap-10 mt-5 xl:mt-12"}>
+            <div className={"grid grid-cols-2 w-[80%] xl:w-[35%] items-center mx-auto gap-3 xl:gap-10 mt-5 xl:mt-12"}>
                 <TeamCard name={"wuritz"} image={"/images/wuritz.png"} />
-                <TeamCard name={"Barnika"} image={"/images/wuritz.png"} />
+                <TeamCard name={"Barnika18"} image={"/images/barnika.png"} />
             </div>
         </div>
     )

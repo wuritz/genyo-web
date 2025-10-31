@@ -1,3 +1,4 @@
+"use client";
 import React, {ReactElement, useState} from 'react'
 import {
     combatModules,
@@ -72,7 +73,7 @@ const Features = () => {
     }
 
     return (
-        <div className={"pb-16"}>
+        <div className={"pb-10"}>
             <h2 className={"mt-6 md:mt-16 text-white font-bold text-center text-2xl md:text-4xl xl:text-5xl hover:text-cyan-100 transition-all duration-300"}>
                 Features
             </h2>

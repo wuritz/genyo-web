@@ -10,6 +10,7 @@ import Download from "@/components/Home/Download/Download";
 import Features from "@/components/Home/Features/Features";
 import Team from "@/components/Home/Team/Team";
 import Stats from "@/components/Home/Stats/Stats";
+import What from "@/components/Home/What/What";
 
 const Home = () => {
 
@@ -31,8 +32,9 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <div id={"home"}><Hero /></div>
+            <div id={"what"}><What /></div>
             <div id={"professional"}><Professional /></div>
-            <div id={"stats"}><Stats /></div>
+            {/*<div id={"stats"}><Stats /></div>*/}
             <div id={"features"}><Features /></div>
             {/*<div id={"screenshots"}><Screenshots /></div>*/}
             <div id={"team"}><Team /></div>

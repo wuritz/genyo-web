@@ -46,7 +46,7 @@ const Hero = () => {
                     </span>
                 </h2>
 
-                <a href={"#professional"}>
+                <a href={"#what"}>
                     <div className={"flex flex-row justify-start items-center gap-2 pl-5 pr-5 pt-3 pb-3 mt-5 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full"}
                          data-aos={"fade-up"} data-aos-delay={"600"}>
                         <p className="text-lg text-white font-medium">

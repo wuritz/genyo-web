@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const What = () => {
     return (
-        <div className={"pb-10 pt-10 xl:pb-16 xl:pt-16"}>
+        <div className={"pb-10 pt-30 xl:pb-16 xl:pt-30"}>
             <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white hover:text-cyan-100 transition-all duration-300"}>
                 What is Genyo?
             </h2>

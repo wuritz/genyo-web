@@ -29,9 +29,11 @@ const Home = () => {
     return (
         <div className="overflow-hidden scroll-smooth">
             <div id={"home"}><Hero /></div>
-            <div id={"what"}><What /></div>
-            <div id={"professional"}><Professional /></div>
-            <div id={"team"}><Team /></div>
+            <div className={"bg-gradient-to-b from-[#07070f] to-blue-950"}>
+                <div id={"what"}><What /></div>
+                <div id={"professional"}><Professional /></div>
+                <div id={"team"}><Team /></div>
+            </div>
             <div id={"download"}><Download /></div>
         </div>
     )

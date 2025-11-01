@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Home/Features/Modules/CategoryButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Features/FeatureCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/FeatureCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Features/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Features.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleFeatures.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Download/Download.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Download/Download.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Navbar/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Navbar/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Professional/Professional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Professional/Professional.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Team/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Team/Team.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Team/TeamCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Team/TeamCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/What/What.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/What/What.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +130,7 @@
       <workItem from="1761920623197" duration="6614000" />
       <workItem from="1761931333366" duration="11711000" />
       <workItem from="1761990772208" duration="1350000" />
-      <workItem from="1762027760851" duration="5480000" />
+      <workItem from="1762027760851" duration="6994000" />
     </task>
     <servers />
   </component>

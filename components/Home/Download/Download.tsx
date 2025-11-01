@@ -5,7 +5,7 @@ import {MdOpenInNew} from "react-icons/md";
 
 const Download = () => {
     return (
-        <div className={"py-10 xl:py-16 bg-blue-950/20"}>
+        <div className={"py-10 xl:py-16 "}>
             <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white hover:text-cyan-100 transition-all duration-300"}>
                 Try it out!
             </h2>

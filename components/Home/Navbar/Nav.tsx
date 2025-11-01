@@ -51,14 +51,20 @@ const Nav = ({openNav}: Props) => {
                     })}
                 </div>
 
+                <a href={"/features"} className={"block lg:hidden"}>
+                    <div className={"inline-block lg:hidden ml-15 bg-blue-950 px-5 py-3 rounded-xl  text-white font-semibold text-md"}>
+                        Features
+                    </div>
+                </a>
+
                 {/* Buttons */}
                 <div className="flex items-center space-x-2">
                     {/* Download button */}
                     <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>
-                        <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
-                        transition-all duration-300 text-white flex items-center space-x-2">
-                            <BiDownload className="w-5 h-5 mr-2" />
-                            Download
+                        <button className="px-5 md:px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
+                        transition-all duration-300 text-white flex items-center md:space-x-2">
+                            <BiDownload className="w-5 h-5" />
+                            <p className={"hidden md:block"}>Download</p>
                         </button>
                     </a>
                 </div>

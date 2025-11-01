@@ -5,14 +5,14 @@ import {MdOpenInNew} from "react-icons/md";
 
 const Download = () => {
     return (
-        <div className={"py-10 xl:py-16 "}>
+        <div className={"py-10 xl:py-16"}>
             <h2 className={"text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white hover:text-cyan-100 transition-all duration-300"}>
                 Try it out!
             </h2>
 
             <div className={"flex flex-col justify-center items-center xl:flex-row gap-3 xl:gap-10 mt-7"}>
                 <div data-aos={"zoom-in"} data-aos-delay={"0"}>
-                    <a href={"https://github.com/wuritz/genyo-addon/releases"} target={"_blank"}>
+                    <a href={"https://github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
                         <button className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900
                                 transition-all duration-300 text-white flex items-center space-x-2">
                             <BiDownload className="w-5 h-5 mr-2" />

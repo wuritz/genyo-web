@@ -15,7 +15,7 @@ const Features = () => {
                             HUD elements
                         </h2>
 
-                        <p className={"text-gray-400 mt-3"}>
+                        <p className={"text-gray-400 mt-3 hover:text-gray-300 transition-all duration-300"}>
                             We ported some HUD elements, <br /> and we made some better than the original.
                         </p>
                     </div>
@@ -37,7 +37,7 @@ const Features = () => {
                             Systems
                         </h2>
 
-                        <p className={"text-gray-400 mt-3"}>
+                        <p className={"text-gray-400 mt-3 hover:text-gray-300 transition-all duration-300"}>
                             Only one of these has actual value.
                             <br />
                         </p>

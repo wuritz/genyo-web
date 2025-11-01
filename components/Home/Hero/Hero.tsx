@@ -30,12 +30,12 @@ const Hero = () => {
                     <span className="text-cyan-200 font-bold">
                         <Typewriter options={{
                             strings: [
-                                'special people',
-                                'idk',
-                                'John Genyo',
-                                'everyone',
-                                'noone',
-                                'special minds'
+                                'special people.',
+                                'idk.',
+                                'John Genyo.',
+                                'everyone :D',
+                                'no one.',
+                                'special minds.'
                             ],
                             autoStart: true,
                             loop: true,
@@ -56,7 +56,7 @@ const Hero = () => {
                     </div>
                 </a>
 
-                <p data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm"} >
+                <p data-aos={"fade-up"} data-aos-delay={"800"} className={"text-gray-400 mt-4 text-sm font-mono"} >
                     Written for 1.21.4 (and 1.21.5)
                 </p>
             </div>

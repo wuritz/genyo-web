@@ -37,7 +37,6 @@ const categories: Props[] = [
     }
 ];
 
-
 const ModuleFeatures = ({allModules}:{allModules: ModuleProps[]}) => {
     const [currentCategory, setCurrentCategory] = useState<Props>(categories[0]);
 
@@ -62,8 +61,11 @@ const ModuleFeatures = ({allModules}:{allModules: ModuleProps[]}) => {
             <h2 className={"text-white font-bold text-center text-2xl md:text-4xl xl:text-5xl hover:text-cyan-100 transition-all duration-300"}>
                 Modules
             </h2>
+            <p className={"text-gray-400 text-md text-center mt-2 hidden xl:block"}>
+                Click on a module for more information!
+            </p>
 
-            <div className={"w-[80%] md:w-[70%] md:mt-16 mt-5 lg-w[70%] mx-auto grid grid-rows-1 items-center md:p-15 md:pt-5 p-2 overflow-x-auto lg:[overflow: none;] pt-0 rounded-2xl bg-white/2 shadow-lg ring-1 ring-white/20 hover:ring-white/50 rounded-2xl backdrop-blur-lg transition-all duration-200"}
+            <div className={"w-[80%] md:w-[70%] md:mt-16 mt-5 lg-w[70%] mx-auto grid grid-rows-1 items-center md:p-15 md:pt-5 p-2 overflow-x-auto lg:[overflow: none;] pt-0 bg-white/2 shadow-lg ring-1 ring-white/20 hover:ring-white/50 rounded-2xl backdrop-blur-lg transition-all duration-200"}
                  data-aos={"fade-up"} data-aos-delay={"100"}
             >
                 {/* Selector */}

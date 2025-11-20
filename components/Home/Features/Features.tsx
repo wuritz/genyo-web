@@ -1,5 +1,6 @@
 import React from 'react'
 import FeatureCard from "@/components/Home/Features/FeatureCard";
+import {genyoHuds, genyoSystems} from "@/app/api/genyo/genyoData";
 
 const Features = () => {
     return (
@@ -17,18 +18,16 @@ const Features = () => {
                             </h2>
 
                             <p className={"text-gray-400 mt-3 hover:text-gray-300 transition-all duration-300"}>
-                                We ported some HUD elements, <br /> and we made some better than the original.
+                                We&#39;ve ported some HUD elements, <br /> and we made some better than the original.
                             </p>
                         </div>
 
                         <div className={"grid grid-cols-2 gap-5 items-center"}
                              data-aos={"fade-right"} data-aos-delay={"200"}
                         >
-                            <FeatureCard name={"Active Genyo"} />
-                            <FeatureCard name={"Better Player Radar"} />
-                            <FeatureCard name={"Packets"} />
-                            <FeatureCard name={"Ping"} />
-                            <FeatureCard name={"PvP Neccessary"} />
+                            {genyoHuds.map((hud) => {
+                                return <FeatureCard key={hud.name} name={hud.name} description={hud.description} />
+                            })}
                         </div>
                     </div>
                 </div>
@@ -50,8 +49,9 @@ const Features = () => {
                         <div className={"grid grid-cols-2 gap-5 items-center"}
                              data-aos={"fade-right"} data-aos-delay={"300"}
                         >
-                            <FeatureCard name={"Enemies"} />
-                            <FeatureCard name={"Sound"} />
+                            {genyoSystems.map((system) => {
+                                return <FeatureCard key={system.name} name={system.name} description={system.description} />
+                            })}
                         </div>
                     </div>
                 </div>

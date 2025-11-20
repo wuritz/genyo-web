@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/genyo/genyoData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/genyo_info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Home/Features/Tooltip.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/features/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/features/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/genyo/genyoData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/genyo/genyoData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/FeatureCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/FeatureCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleFeatures.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +154,8 @@
       <workItem from="1763588771799" duration="66000" />
       <workItem from="1763588861138" duration="1988000" />
       <workItem from="1763629763529" duration="4116000" />
+      <workItem from="1763635283503" duration="339000" />
+      <workItem from="1763654173636" duration="5298000" />
     </task>
     <servers />
   </component>

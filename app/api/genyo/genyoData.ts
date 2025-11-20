@@ -57,20 +57,7 @@ function loadYaml(): YamlData {
 
 const data = loadYaml();
 
-// Typed exports you can import in other server files
 export const genyoCategories: string[] = data.categories;
 export const genyoModules: ModuleProps[] = data.modules;
 export const genyoSystems: SystemProps[] = data.systems;
 export const genyoHuds: HudProps[] = data.huds;
-
-export const modulesByCategory: Record<string, ModuleProps[]> =
-    genyoModules.reduce(
-        (acc, mod) => {
-            if (!acc[mod.category]) {
-                acc[mod.category] = [];
-            }
-            acc[mod.category].push(mod);
-            return acc;
-        },
-        {} as Record<string, ModuleProps[]>
-    );

@@ -51,6 +51,7 @@ const ModuleFeatures = ({allModules}:{allModules: ModuleProps[]}) => {
                         setCurrentCategory(categories[index]);
                         }}
                     />
+
                 ))}
             </div>
         );

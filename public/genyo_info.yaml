@@ -1,0 +1,267 @@
+{
+  categories: [
+    Combat,
+    Misc,
+    Movement,
+    Visual,
+    World
+  ]
+  ,
+  modules: [
+    {
+      name: Genyo Auto Armor,
+      description: Automatically replaces armor pieces.,
+      category: Combat
+    },
+    {
+      name: Genyo Auto Totem,
+      description: Automatically replenishes the totem in your offhand,
+      category: Combat
+    },
+    {
+      name: Genyo Auto Trap,
+      description: Fully traps enemies with blocks.,
+      category: Combat
+    },
+    {
+      name: Genyo AutoCrystal,
+      description: asd,
+      category: Combat
+    },
+    {
+      name: Genyo AutoXP,
+      description: better than blackout,
+      category: Combat
+    },
+    {
+      name: Genyo Criticals,
+      description: crrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr,
+      category: Combat
+    },
+    {
+      name: Genyo Replenish,
+      description: fwejhfkljwefklwejfklkwlefjlwefl,
+      category: Combat
+    },
+    {
+      name: KFC Spawn Kill,
+      description: 'ask about the name, i won''t tell you.',
+      category: Combat
+    },
+    {
+      name: Auto Brainrot,
+      description: Traumatize your surroundings or the whole server.,
+      category: Misc
+    },
+    {
+      name: Auto Sigma,
+      description: 'and i heard em say, nothing''s ever promised tomorrow today',
+      category: Misc
+    },
+    {
+      name: Combat Brainrot,
+      description: says something sigma while in crystal pvp.,
+      category: Misc
+    },
+    {
+      name: einstein,
+      description: natural selection of society,
+      category: Misc
+    },
+    {
+      name: Fast Latency,
+      description: Calculates server ping (use with Ping HUD),
+      category: Misc
+    },
+    {
+      name: Genyo Auto Ez,
+      description: 'igen igen igen, dikta mamo tyibori.-----------------------------------------------------------------',
+      category: Misc
+    },
+    {
+      name: Genyo Discord,
+      description: this one is superior to the original module because its genyo,
+      category: Misc
+    },
+    {
+      name: Genyo Goodbye,
+      description: 'i hate kiwi. i hate kiwi. i hate kiwi. i hate kiwi. i hate kiwi. ',
+      category: Misc
+    },
+    {
+      name: Genyo Skin Blink,
+      description: 'i love kiwi. i love kiwi. i love kiwi. i love kiwi. ',
+      category: Misc
+    },
+    {
+      name: Genyo Swing,
+      description: 'Change the swinginess (?) of the player''s hand',
+      category: Misc
+    },
+    {
+      name: Genyo Timer,
+      description: Changes the change to the change and change.,
+      category: Misc
+    },
+    {
+      name: Genyo Welcome,
+      description: i love kiwi. i love kiwi. i love kiwi. i love kiwi. i love kiwi.,
+      category: Misc
+    },
+    {
+      name: No Packet Kick,
+      description: Prevents getting kicked by packets,
+      category: Misc
+    },
+    {
+      name: Packet Debug,
+      description: yweoikfjwekfjhewkfjwehfkjefhwehjkfhwehfkew.,
+      category: Misc
+    },
+    {
+      name: Anti Ladder,
+      description: Prevents you from climbing ladders.,
+      category: Movement
+    },
+    {
+      name: Genyo No Slow,
+      description: Prevents items from slowing the player.,
+      category: Movement
+    },
+    {
+      name: Genyo Phase,
+      description: asd,
+      category: Movement
+    },
+    {
+      name: Genyo Velocity,
+      description: efhewhfjkhewfjhkewfh jekw,
+      category: Movement
+    },
+    {
+      name: Tsunoda Blinker,
+      description: Yuki's short as fuck,
+      category: Movement
+    },
+    {
+      name: Angel Sex Hulkenberg,
+      description: 'jön a verstappen, nekiütközött a verstappen, kiesik a verstappen',
+      category: Visual
+    },
+    {
+      name: Genyo Capes,
+      description: The thing,
+      category: Visual
+    },
+    {
+      name: Genyo Nametags,
+      description: 'Same as Meteor Nametags, pop counter included',
+      category: Visual
+    },
+    {
+      name: PenisESP,
+      description: faszfasz fasz fasz fasz fasz fsaz fasz,
+      category: Visual
+    },
+    {
+      name: Fast Place,
+      description: Place items and blocks faster,
+      category: World
+    },
+    {
+      name: Genyo Auto Penis,
+      description: show genyo's bbc,
+      category: World
+    },
+    {
+      name: Genyo Auto Tool,
+      description: Yés,
+      category: World
+    },
+    {
+      name: Genyo Auto Windmill,
+      description: Slam Genyo's windmill,
+      category: World
+    },
+    {
+      name: Genyo AutoMine,
+      description: fasz,
+      category: World
+    },
+    {
+      name: Genyo Ghost Blocks,
+      description: maybe,
+      category: World
+    },
+    {
+      name: Genyo Scaffold,
+      description: i shit the bed regularly,
+      category: World
+    },
+    {
+      name: Genyo SelfTrap,
+      description: a funny one for sure.,
+      category: World
+    },
+    {
+      name: Genyo Speedmine,
+      description: fasz fasz fsaz fasz,
+      category: World
+    },
+    {
+      name: Genyo Surround,
+      description: haaaaaaaaaaaaaa,
+      category: World
+    },
+    {
+      name: Genyo Surround V2,
+      description: Today I am the shit after I wake the shit is Yes,
+      category: World
+    }
+  ]
+  ,
+  systems: [
+    {
+      name: Enemies,
+      description: 'Store a list of enemies that Genyo will use. Add and remove players,
+        use Meteor''s BetterTab to see them in Tab and other features.'
+    },
+    {
+      name: Sound,
+      description: Custom sounds that make your gaming experience even better. 100%
+        real information.
+    }
+  ]
+  ,
+  huds: [
+    {
+      name: Pvp Neccessary,
+      description: Fasz fasz fasz fasz fasz fasz.
+    },
+    {
+      name: Active Genyo,
+      description: Displays your active GENYO modules.
+    },
+    {
+      name: Packets,
+      description: Displays the amount of incoming and outgoing packets. (out <- in)
+    },
+    {
+      name: Watermark,
+      description: The best thing in the entire addon.
+    },
+    {
+      name: Better Player Radar,
+      description: Displays players in your visual range.
+    },
+    {
+      name: Logo,
+      description: Acts like a badge of honor or idk
+    },
+    {
+      name: Ping,
+      description: Displays the server's ping. (turn on FastLatency)
+    }
+  ]
+  
+}

@@ -1,13 +1,5 @@
 "use client";
-import React, {ReactElement, useState} from 'react'
-import {
-    combatModules,
-    miscModules,
-    moduleProps,
-    movementModules,
-    visualModules,
-    worldModules
-} from "@/constant/constant";
+import React, { useState } from 'react'
 import ModuleCard from "@/components/Home/Features/Modules/ModuleCard";
 import {MdMiscellaneousServices} from "react-icons/md";
 import {RiSwordFill} from "react-icons/ri";
@@ -15,6 +7,7 @@ import {IconType} from "react-icons";
 import {FaGlobeAmericas, FaWheelchair} from "react-icons/fa";
 import {AiOutlineEye} from "react-icons/ai";
 import CategoryButton from "@/components/Home/Features/Modules/CategoryButton";
+import { ModuleProps } from "@/app/api/genyo/genyoData";
 
 interface Props {
     name: string,
@@ -44,9 +37,8 @@ const categories: Props[] = [
     }
 ];
 
-const allModules: moduleProps[]  = [...combatModules, ...miscModules, ...movementModules, ...visualModules, ...worldModules];
 
-const ModuleFeatures = () => {
+const ModuleFeatures = ({allModules}:{allModules: ModuleProps[]}) => {
     const [currentCategory, setCurrentCategory] = useState<Props>(categories[0]);
 
     const CategoryButtons = () => {
@@ -83,7 +75,7 @@ const ModuleFeatures = () => {
                 <div>
                     <div className={"grid grid-cols-3 space-x-1 gap-2 md:gap-5 items-center w-[93%] md:w-[97%] mx-auto"}>
                         {allModules.filter(module => module.category === currentCategory.name).map(item => {
-                            return <ModuleCard key={item.name} name={item.name} desc={item.desc} Icon={categories.filter(val => val.name === item.category)[0].icon}/>
+                            return <ModuleCard key={item.name} name={item.name} desc={item.description} Icon={categories.filter(val => val.name === item.category)[0].icon}/>
                         })}
                     </div>
                 </div>

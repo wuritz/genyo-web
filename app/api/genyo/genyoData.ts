@@ -54,7 +54,6 @@ function loadYaml(): YamlData {
         huds,
     };
 }
-
 const data = loadYaml();
 
 export const genyoCategories: string[] = data.categories;

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSec from "@/components/Home/hero-sec";
 import NavbarSec from "@/components/Home/navbar-sec";
+import ModulesSec from "@/components/modules-sec";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <section className={"relative min-h-screen flex flex-col"}>
                 <NavbarSec />
                 <HeroSec />
+                <ModulesSec />
             </section>
         </div>
     )

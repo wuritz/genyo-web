@@ -1,6 +1,5 @@
 # Genyo Website
 
-no I of course didn't just follow a tutorial, why would I do that?<br />
-credit to that indian guy.
+V2.
 
 ❗ check out the real [Genyo](https://github.com/wuritz/genyo-addon) ❗

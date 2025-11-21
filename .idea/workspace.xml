@@ -4,7 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="" />
+    <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Home/hero-sec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Home/navbar-sec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/accordion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/alert-dialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/alert.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/aspect-ratio.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/avatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/breadcrumb.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/calendar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/chart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/checkbox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/collapsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/command.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/context-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/dialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/drawer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/dropdown-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/hover-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/input-otp.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/label.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/menubar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/navigation-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/pagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/popover.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/progress.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/radio-group.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/resizable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/scroll-area.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/select.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/separator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/sheet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/skeleton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/slider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/sonner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/switch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/textarea.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/toggle-group.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/toggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/tooltip.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/use-mobile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UI/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/features/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Download/Download.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/FeatureCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/FeatureCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/Features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/CategoryButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/Modules/CategoryButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/Modules/ModuleCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Modules/ModuleFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/Modules/ModuleFeatures.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Features/Tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/v1/features/Tooltip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/Hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero/ParticleBackground.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Navbar/MobileNav.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Navbar/Nav.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Navbar/ResponsiveNav.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Professional/Professional.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Professional/ProfessionalCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Screenshots/ScreenshotCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Screenshots/Screenshots.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Skills/Skills.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Stats/StatCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Stats/StatLabel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Stats/Stats.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Team/Team.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Team/TeamCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/What/What.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,31 +127,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Ricsi/Geci Client/genyo-web/public/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jozse\\Documents\\webstorm\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:3000.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "v2",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "F:/Ricsi/Geci Client/genyo-web/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\jozse\\Documents\\webstorm\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -82,11 +166,11 @@
       <recent name="F:\Ricsi\Geci Client\genyo-web\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jozse\Documents\webstorm\components\UI" />
+      <recent name="C:\Users\jozse\Documents\webstorm\components\v1\features" />
+      <recent name="C:\Users\jozse\Documents\webstorm\components\v1" />
       <recent name="C:\Users\jozse\Documents\webstorm\app" />
       <recent name="C:\Users\jozse\Documents\webstorm\public" />
-      <recent name="F:\Ricsi\Geci Client\genyo-web\components\Home\Features\Modules" />
-      <recent name="F:\Ricsi\Geci Client\genyo-web\components\Home" />
-      <recent name="F:\Ricsi\Geci Client\genyo-web\Pages" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">
@@ -147,7 +231,9 @@
       <workItem from="1763588861138" duration="1988000" />
       <workItem from="1763629763529" duration="4116000" />
       <workItem from="1763635283503" duration="339000" />
-      <workItem from="1763654173636" duration="5954000" />
+      <workItem from="1763654173636" duration="6648000" />
+      <workItem from="1763666511518" duration="2149000" />
+      <workItem from="1763732414666" duration="1691000" />
     </task>
     <servers />
   </component>

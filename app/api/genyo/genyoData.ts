@@ -22,7 +22,6 @@ export interface YamlData {
     categories: string[];
     modules: ModuleProps[];
     systems: SystemProps[];
-    huds: HudProps[];
 }
 
 // Read + parse YAML once at module load time (server-only)
@@ -39,19 +38,17 @@ function loadYaml(): YamlData {
     const {
         categories = [],
         modules = [],
-        systems = [],
-        huds = [],
+        systems = []
     } = parsed as Partial<YamlData>;
 
-    if (!Array.isArray(modules) || !Array.isArray(systems) || !Array.isArray(huds)) {
+    if (!Array.isArray(modules) || !Array.isArray(systems)) {
         throw new Error("genyo_info.yaml parsing failed: invalid arrays");
     }
 
     return {
         categories,
         modules,
-        systems,
-        huds,
+        systems
     };
 }
 const data = loadYaml();
@@ -59,4 +56,3 @@ const data = loadYaml();
 export const genyoCategories: string[] = data.categories;
 export const genyoModules: ModuleProps[] = data.modules;
 export const genyoSystems: SystemProps[] = data.systems;
-export const genyoHuds: HudProps[] = data.huds;

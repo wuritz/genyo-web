@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
-import Footer from "@/components/Home/Footer/Footer";
-import ScrollToTop from "@/components/Helper/ScrollToTop";
+import NavbarSec from "@/components/navbar/navbar-sec";
+import React from "react";
+import FooterSec from "@/components/footer-sec";
 
 const font = Inter({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -22,11 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} antialiased bg-[#07070f]`}>
-        <ResponsiveNav />
+      <body className={`${font.className} antialiased`}>
+        <NavbarSec />
         {children}
-        <Footer />
-        <ScrollToTop />
+        <FooterSec />
       </body>
     </html>
   );

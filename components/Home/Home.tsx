@@ -1,40 +1,19 @@
-"use client";
-import React, { useEffect } from 'react'
-import Hero from "@/components/Home/Hero/Hero";
-import Professional from "@/components/Home/Professional/Professional";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Download from "@/components/Home/Download/Download";
-import Team from "@/components/Home/Team/Team";
-import What from "@/components/Home/What/What";
+import React from 'react'
+import HeroSec from "@/components/Home/hero-sec";
+import ModulesSec from "@/components/Home/modules-sec";
+import {genyoModules} from "@/app/api/genyo/genyoData";
+import WhySec from "@/components/Home/why-sec";
+import DownloadSec from "@/components/Home/download-sec";
 
 const Home = () => {
-
-    useEffect(() => {
-        const initAOS = async () => {
-            await import("aos");
-
-            AOS.init({
-                duration: 1000,
-                easing: "ease",
-                once: true,
-                anchorPlacement: "top-bottom"
-            });
-        }
-
-        initAOS();
-    }, []);
-
     return (
-        <div className="overflow-hidden scroll-smooth">
-            <div id={"home"}><Hero /></div>
-            <div className={"bg-gradient-to-b from-[#07070f] to-blue-950"}>
-                <div id={"what"}><What /></div>
-                <div id={"professional"}><Professional /></div>
-                <div id={"team"}><Team /></div>
-            </div>
-            <div id={"download"}><Download /></div>
+        <div className={"min-h-screen bg-white text-black scroll-smooth"}>
+            <section className={"relative flex flex-col"}>
+                <HeroSec />
+                <ModulesSec modules={genyoModules} />
+                <WhySec />
+                <DownloadSec />
+            </section>
         </div>
     )
 }

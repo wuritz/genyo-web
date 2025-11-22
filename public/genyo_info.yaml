@@ -217,6 +217,40 @@
       name: Genyo Surround V2,
       description: Today I am the shit after I wake the shit is Yes,
       category: World
+    },
+    {
+      name: Pvp Neccessary,
+      description: Fasz fasz fasz fasz fasz fasz.
+    },
+    {
+      name: Active Genyo,
+      description: Displays your active GENYO modules.,
+      category: Hud
+    },
+    {
+      name: Packets,
+      description: Displays the amount of incoming and outgoing packets. (out <- in),
+      category: Hud
+    },
+    {
+      name: Watermark,
+      description: The best thing in the entire addon.,
+      category: Hud
+    },
+    {
+      name: Better Player Radar,
+      description: Displays players in your visual range.,
+      category: Hud
+    },
+    {
+      name: Logo,
+      description: Acts like a badge of honor or idk,
+      category: Hud
+    },
+    {
+      name: Ping,
+      description: Displays the server's ping. (turn on FastLatency),
+      category: Hud
     }
   ]
   ,
@@ -232,36 +266,4 @@
         real information.
     }
   ]
-  ,
-  huds: [
-    {
-      name: Pvp Neccessary,
-      description: Fasz fasz fasz fasz fasz fasz.
-    },
-    {
-      name: Active Genyo,
-      description: Displays your active GENYO modules.
-    },
-    {
-      name: Packets,
-      description: Displays the amount of incoming and outgoing packets. (out <- in)
-    },
-    {
-      name: Watermark,
-      description: The best thing in the entire addon.
-    },
-    {
-      name: Better Player Radar,
-      description: Displays players in your visual range.
-    },
-    {
-      name: Logo,
-      description: Acts like a badge of honor or idk
-    },
-    {
-      name: Ping,
-      description: Displays the server's ping. (turn on FastLatency)
-    }
-  ]
-  
 }

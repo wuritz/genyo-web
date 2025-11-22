@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from 'react'
-import { Sword, Zap, Eye, Globe, Package } from "lucide-react";
+import {Sword, Zap, Eye, Globe, Package, Maximize} from "lucide-react";
 import { ModuleProps } from "@/app/api/genyo/genyoData";
 
 type Props = {
     modules: ModuleProps[];
 }
-type Category = "Combat" | "Misc" | "Movement" | "Visual" | "World";
+type Category = "Combat" | "Misc" | "Movement" | "Visual" | "World" | "Hud";
 
 const categoryIcons = {
     Combat: Sword,
@@ -14,11 +14,12 @@ const categoryIcons = {
     Visual: Eye,
     World: Globe,
     Misc: Package,
+    Hud: Maximize
 };
 
 const ModulesSec = ({modules}: Props) => {
     const [selectedCategory, setSelectedCategory] = useState<Category>("Combat");
-    const categories: Category[] = ["Combat", "Movement", "Visual", "World", "Misc"];
+    const categories: Category[] = ["Combat", "Movement", "Visual", "World", "Misc", "Hud"];
 
     const filteredModules = modules.filter(module => module.category === selectedCategory);
 

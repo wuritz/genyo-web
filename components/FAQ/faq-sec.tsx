@@ -38,7 +38,7 @@ const FaqSec = () => {
     };
 
     return (
-        <section className={" bg-gray-50 min-h-screen flex flex-1 justify-center items-center"}>
+        <section className={" bg-gray-50 min-h-screen flex flex-1 justify-center items-center pr-6 pl-6 xl:pr-0 xl:pl-0"}>
             <div className="max-w-4xl mx-auto">
                 <div className="mb-12 mt-10">
                     <h2 className="mb-4 leading-none">FAQ</h2>

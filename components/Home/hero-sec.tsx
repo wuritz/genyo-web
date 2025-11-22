@@ -12,26 +12,26 @@ const HeroSec = () => {
     const { release } = useLatestRelease();
 
     return (
-        <div className={"flex flex-1 items-center justify-center min-h-screen"}>
+        <div className={"flex flex-1 items-center justify-center min-h-screen mt-10 xl:mt-0 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
             <div className="max-w-6xl w-full">
                 <div className="mb-12">
                     <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                        <div className="inline-block border-2 border-black px-4 py-1 mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
+                        <div className="hidden xl:inline-block border-2 border-black px-4 py-1 mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
                             <span className="font-mono text-xs uppercase ">Latest version • {release ? release.tag_name : "unknown"}</span>
                         </div>
                     </a>
 
-                    <h1 className="flex mb-6 text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
+                    <h1 className="flex mb-6 text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
                         Genyo Addon
                         <IoSparklesOutline className={"ml-5"}/>
                     </h1>
 
                     <div className="max-w-2xl mb-8">
-                        <p className="text-xl leading-relaxed">
-                            Tbe best utility addon for <a className={"text-gray-600 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</a>,
+                        <p className="text-md xl:text-xl leading-relaxed">
+                            The best utility addon for <a className={"text-gray-600 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</a>,
                             filled with Shoreline and Genyo magic :D
                         </p>
-                        <p className="text-lg text-gray-500 mt-4">
+                        <p className="text-sm xl:text-lg text-gray-500 mt-4">
                             Powered by special people&#39;s special minds.
                         </p>
                     </div>

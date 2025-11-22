@@ -52,7 +52,7 @@ const FaqSec = () => {
                         >
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors group"
+                                className={`w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 ${openIndex === index ? "bg-amber-100" : ""} transition-colors group cursor-pointer`}
                             >
                 <span className="font-mono uppercase text-sm pr-4">
                   {faq.question}
@@ -67,8 +67,8 @@ const FaqSec = () => {
                             </button>
 
                             {openIndex === index && (
-                                <div className="px-6 pb-6 border-t-2 border-black bg-gray-50">
-                                    <p className="text-sm leading-relaxed pt-4">
+                                <div className="px-6 pb-6 border-t-2 border-black bg-gray-100">
+                                    <p className="text-sm leading-relaxed pt-5">
                                         {faq.answer}
                                     </p>
                                 </div>

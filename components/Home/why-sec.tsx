@@ -6,9 +6,9 @@ const WhySec = () => {
         <section className="border-t-4 border-black py-20 px-6 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
-                    <h2 className="mb-4 leading-none">WHY USE THIS?</h2>
+                    <h2 className="mb-4 leading-none">WHY USE GENYO?</h2>
                     <p className="text-gray-600 text-lg max-w-2xl">
-                        Excellent question. Here&#39;s some totally legitimate reasons.
+                        I mean it&#39;s pretty obvious, but if you really need more convincing:
                     </p>
                 </div>
 
@@ -22,7 +22,7 @@ const WhySec = () => {
                             FREE
                         </div>
                         <p className="text-lg text-gray-300">
-                            As in beer. As in freedom. As in &#34;why would you even consider paying for this?"
+                            This just looks cool. Free is my favourite word.
                         </p>
                     </div>
 
@@ -31,21 +31,20 @@ const WhySec = () => {
                         <div className="border-2 border-black bg-white p-6">
                             <div className="text-3xl font-mono mb-2">OPEN</div>
                             <p className="text-sm text-gray-600">
-                                Source code included. Judge our questionable coding practices.
+                                Genyo is open-source. Yay I guess.
                             </p>
                         </div>
                         <div className="border-2 border-black bg-gray-50 p-6">
                             <div className="text-3xl font-mono mb-2">70+</div>
                             <p className="text-sm text-gray-600">
-                                Modules. That's like, a lot of modules.
+                                Modules. We could make a client but I don&#39;t want to.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                {/* Before/After comparison - brutalist style */}
                 <div className="mb-16">
-                    <div className="font-mono text-sm mb-4 text-gray-500 uppercase">BEFORE VS AFTER</div>
+                    <div className="font-mono text-sm mb-4 text-gray-500 uppercase">THIS WAS WRITTEN WITH AI BUT ITS FUNNY:</div>
                     <div className="grid md:grid-cols-2 gap-6">
                         {/* Before */}
                         <div className="border-2 border-black p-8 bg-gray-50">
@@ -117,8 +116,8 @@ const WhySec = () => {
                             <div className="font-mono uppercase mb-2">DISCLAIMER</div>
                             <p className="text-sm leading-relaxed">
                                 Genyo Addon may cause life-improving side-effects, such as
-                                a phenomenon called "never going back to vanilla". The most severe
-                                cases include "never using anything else", but that's the whole point I guess.
+                                a phenomenon called &#34;never going back to vanilla&#34;. The most severe
+                                cases include &#34;never using anything else&#34;, but that&#39;s the whole point I guess.
                             </p>
                         </div>
                     </div>

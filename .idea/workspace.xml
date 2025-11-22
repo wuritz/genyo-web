@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/faq/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/FAQ/faq-sec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/fetchGithub.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/navbar/navbar-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/navbar/navbar-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FAQ/faq-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FAQ/faq-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Helper/ScrollToTop.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/download-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/download-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/hero-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/hero-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar/navbar-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/navbar/navbar-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar/navbar-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/why-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/why-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/modules-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/FeatureCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/Features.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/Modules/CategoryButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/Modules/ModuleCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/Modules/ModuleFeatures.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/v1/features/Tooltip.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,31 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Ricsi/Geci Client/genyo-web/public/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\jozse\\Documents\\webstorm\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.localhost:3000.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "v2",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "F:/Ricsi/Geci Client/genyo-web/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\jozse\\Documents\\webstorm\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -88,11 +102,11 @@
       <recent name="F:\Ricsi\Geci Client\genyo-web\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jozse\Documents\webstorm\components\Home\navbar" />
+      <recent name="C:\Users\jozse\Documents\webstorm\components" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\Home" />
+      <recent name="C:\Users\jozse\Documents\webstorm\components\Home\navbar" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\UI" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\v1\features" />
-      <recent name="C:\Users\jozse\Documents\webstorm\components\v1" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">

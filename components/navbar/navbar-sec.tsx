@@ -1,13 +1,13 @@
 "use client";
 import React, {useEffect} from 'react'
-import NavbarButton from "@/components/Home/navbar/navbar-button";
+import NavbarButton from "@/components/navbar/navbar-button";
 
 const NavbarSec = () => {
     const [invert, setInvert] = React.useState(false);
 
     useEffect(() => {
         const handler = () => {
-            if (window.scrollY >= 123) setInvert(true);
+            if (window.scrollY >= 90) setInvert(true);
             else setInvert(false);
         };
 
@@ -26,7 +26,7 @@ const NavbarSec = () => {
                 </div>
                 <div className="flex gap-4">
                     <NavbarButton invert={invert} text={"FAQ"} link={"/faq"} target={false} />
-                    <NavbarButton invert={invert} text={"GITHUB"} link={"https://github.com/wuritz/genyo-addon"} target={true}/>
+                    <NavbarButton invert={invert} text={"GITHUB"} github={true} link={"https://github.com/wuritz/genyo-addon"} target={true}/>
                 </div>
             </div>
         </nav>

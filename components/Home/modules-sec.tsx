@@ -28,7 +28,7 @@ const ModulesSec = ({modules}: Props) => {
                 <div className="mb-12">
                     <h2 className="mb-4 leading-none">MODULES</h2>
                     <p className="text-gray-600 text-lg max-w-2xl">
-                        Click a category. Read descriptions. Feel superior about your life choices.
+                        Click a category. Read descriptions. Asd.
                     </p>
                 </div>
 
@@ -43,7 +43,7 @@ const ModulesSec = ({modules}: Props) => {
                                     <button
                                         key={category}
                                         onClick={() => setSelectedCategory(category)}
-                                        className={`w-full flex items-center gap-3 px-6 py-5 font-mono uppercase text-sm transition-colors ${
+                                        className={`w-full flex items-center gap-3 px-6 py-5 font-mono uppercase text-sm transition-colors cursor-pointer ${
                                             index !== 0 ? "border-t-2 border-black" : ""
                                         } ${
                                             selectedCategory === category
@@ -66,14 +66,14 @@ const ModulesSec = ({modules}: Props) => {
                             SHOWING {filteredModules.length} MODULES
                         </div>
 
-                        {/* Modules Grid - 2 columns */}
+                        {/* Modules Grid */}
                         <div className="grid md:grid-cols-2 gap-4">
                             {filteredModules.map((module, index) => (
                                 <div
                                     key={index}
-                                    className="border-2 border-black p-5 bg-white hover:bg-black hover:text-white transition-colors group cursor-pointer"
+                                    className="border-2 border-black p-5 bg-white hover:bg-black hover:text-white transition-colors group"
                                 >
-                                    <h3 className="mb-2 font-mono uppercase text-sm">{module.name}</h3>
+                                    <h3 className="mb-2 font-mono text-sm">{module.name}</h3>
                                     <p className="text-sm leading-relaxed text-gray-600 group-hover:text-gray-300">
                                         {module.description}
                                     </p>

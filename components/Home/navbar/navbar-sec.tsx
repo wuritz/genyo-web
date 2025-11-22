@@ -19,9 +19,9 @@ const NavbarSec = () => {
     return (
         <nav className={`border-b-4 ${invert ? "backdrop-invert backdrop-blur-sm" : ""} border-black p-6 fixed w-full z-[1000] transition-all duration-300`}>
             <div className="max-w-7xl mx-auto flex justify-between items-center">
-                <div className={`font-mono uppercase tracking-tight ${invert ? "text-white" : "text-black"} `}>GENYO</div>
+                <div className={`tracking-tight ${invert ? "text-white bg-black" : "text-black"} `}>Genyo</div>
                 <div className="flex gap-4">
-                    <NavbarButton invert={invert} text={"DOCS"} link={""} />
+                    <NavbarButton invert={invert} text={"FAQ"} link={"/faq"} />
                     <NavbarButton invert={invert} text={"GITHUB"} link={"https://github.com/wuritz/genyo-addon"} />
                 </div>
             </div>

@@ -6,7 +6,7 @@ const FooterSec = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="font-mono text-sm text-gray-600">
-                        MADE WITH ⌨️ AND QUESTIONABLE LIFE CHOICES
+                        MADE WITH CODE AND QUESTIONABLE LIFE CHOICES
                     </div>
                     <div className="font-mono text-sm text-gray-600">
                         WURITZ © 2025

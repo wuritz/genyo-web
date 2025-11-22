@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f558520-2bd0-4f00-bb2a-385f63d25956" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Home/download-sec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Home/why-sec.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer-sec.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/hero-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/hero-sec.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/navbar-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/navbar-sec.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/navbar-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/navbar/navbar-sec.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/navbar/navbar-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer-sec.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer-sec.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +88,11 @@
       <recent name="F:\Ricsi\Geci Client\genyo-web\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jozse\Documents\webstorm\components\Home\navbar" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\Home" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\UI" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\v1\features" />
       <recent name="C:\Users\jozse\Documents\webstorm\components\v1" />
-      <recent name="C:\Users\jozse\Documents\webstorm\app" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.localhost:3000">

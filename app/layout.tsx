@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavbarSec from "@/components/Home/navbar-sec";
+import NavbarSec from "@/components/Home/navbar/navbar-sec";
 import React from "react";
 import FooterSec from "@/components/footer-sec";
 

@@ -5,10 +5,10 @@ import {TbBrandGithub} from "react-icons/tb";
 
 const HeroSec = () => {
     return (
-        <div className={"flex flex-1 items-center justify-center px-6 py-20"}>
+        <div className={"flex flex-1 items-center justify-center min-h-screen"}>
             <div className="max-w-6xl w-full">
                 <div className="mb-12">
-                    <div className="inline-block border-2 border-black px-4 py-1 mb-8 rotate-[-1deg]">
+                    <div className="inline-block border-2 border-black px-4 py-1 mb-8">
                         <span className="font-mono text-xs uppercase">v1.0 • DEFINITELY NOT CHEATING</span>
                     </div>
 

@@ -12,7 +12,7 @@ const HeroSec = () => {
     const { release } = useLatestRelease();
 
     return (
-        <div className={"flex flex-1 items-center justify-center min-h-screen mt-10 xl:mt-0 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
+        <div className={"flex flex-1 items-center justify-center min-h-screen mt-30 xl:mt-0 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
             <div className="max-w-6xl w-full">
                 <div className="mb-12">
                     <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
@@ -98,7 +98,7 @@ const HeroSec = () => {
                 </div>
 
                 <p className="mt-4 text-sm text-gray-400 font-mono">
-                    *BUGS ARE CONSIDERED FEATURES AROUND HERE
+                    *BUGS ARE CONSIDERED TO BE FEATURES AROUND HERE
                 </p>
             </div>
         </div>

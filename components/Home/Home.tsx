@@ -3,7 +3,7 @@ import HeroSec from "@/components/Home/hero-sec";
 import ModulesSec from "@/components/Home/modules-sec";
 import {genyoModules} from "@/app/api/genyo/genyoData";
 import WhySec from "@/components/Home/why-sec";
-import DownloadSec from "@/components/Home/download-sec";
+import DownloadSec from "@/components/download-sec";
 import TeamSec from "@/components/Home/team-sec";
 
 const Home = () => {

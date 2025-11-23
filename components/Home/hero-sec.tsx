@@ -62,7 +62,7 @@ const HeroSec = () => {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-2 border-black rounded-none bg-blue-300 font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
+                                className="border-2 border-black rounded-none bg-blue-400 font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
                             >
                                 <FaDiscord className="mr-2 h-4 w-4" />
                                 DISCORD

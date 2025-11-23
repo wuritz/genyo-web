@@ -74,7 +74,7 @@ export function useLatestRelease() {
                     allReleases.push(...pageReleases);
 
                     const linkHeader = res.headers.get("Link") || "";
-                    // GitHub pagination: look for rel="next"
+
                     if (linkHeader.includes('rel="next"')) {
                         page += 1;
                     } else {

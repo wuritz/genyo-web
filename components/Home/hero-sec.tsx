@@ -62,7 +62,7 @@ const HeroSec = () => {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-2 border-black rounded-none font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
+                                className="border-2 border-black rounded-none bg-blue-300 font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
                             >
                                 <FaDiscord className="mr-2 h-4 w-4" />
                                 DISCORD
@@ -80,9 +80,9 @@ const HeroSec = () => {
                         </div>
                     </div>
                     <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group">
-                        <div className="text-4xl font-mono mb-2">0</div>
+                        <div className="text-4xl font-mono mb-2">1.21.4</div>
                         <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
-                            Brain Cells required
+                            Required
                         </div>
                     </div>
                     <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">

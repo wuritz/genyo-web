@@ -38,8 +38,8 @@ const FaqSec = () => {
     };
 
     return (
-        <section className={" bg-gray-50 min-h-screen flex flex-1 justify-center items-center pr-6 pl-6 xl:pr-0 xl:pl-0"}>
-            <div className="max-w-4xl mx-auto">
+        <section className={" bg-gray-50 min-h-screen flex flex-1 justify-center items-center pr-6 pl-6 mt-20 xl:mt-0 xl:pr-0 xl:pl-0"}>
+            <div className="w-4xl mx-auto">
                 <div className="mb-12 mt-10">
                     <h2 className="mb-4 leading-none">FAQ</h2>
                 </div>
@@ -52,7 +52,7 @@ const FaqSec = () => {
                         >
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className={`w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 ${openIndex === index ? "bg-amber-100" : ""} transition-colors group cursor-pointer`}
+                                className={`w-full flex items-center justify-between p-6 text-left ${openIndex === index ? "bg-amber-100" : "hover:bg-gray-100"} transition-colors group cursor-pointer`}
                             >
                 <span className="font-mono uppercase text-sm pr-4">
                   {faq.question}
@@ -67,7 +67,7 @@ const FaqSec = () => {
                             </button>
 
                             {openIndex === index && (
-                                <div className="px-6 pb-6 border-t-2 border-black bg-gray-100">
+                                <div className="px-6 pb-6 border-t-2 border-black bg-gray-200">
                                     <p className="text-sm leading-relaxed pt-5">
                                         {faq.answer}
                                     </p>

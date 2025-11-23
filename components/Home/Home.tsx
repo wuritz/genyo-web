@@ -4,6 +4,7 @@ import ModulesSec from "@/components/Home/modules-sec";
 import {genyoModules} from "@/app/api/genyo/genyoData";
 import WhySec from "@/components/Home/why-sec";
 import DownloadSec from "@/components/Home/download-sec";
+import TeamSec from "@/components/Home/team-sec";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <HeroSec />
                 <ModulesSec modules={genyoModules} />
                 <WhySec />
+                <TeamSec />
                 <DownloadSec />
             </section>
         </div>

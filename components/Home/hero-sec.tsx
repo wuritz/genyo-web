@@ -5,11 +5,13 @@ import { ArrowRight  } from "lucide-react";
 import {TbBrandDiscord, TbBrandDiscordFilled, TbBrandGithub} from "react-icons/tb";
 import {useLatestRelease} from "@/app/api/fetchGithub";
 import {FaDiscord} from "react-icons/fa";
-import {HiMiniSparkles} from "react-icons/hi2";
+import {HiMiniSparkles, HiOutlineCog6Tooth} from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
+import {MdOutlineDownloadDone} from "react-icons/md";
+import {RiDownloadCloud2Line} from "react-icons/ri";
 
 const HeroSec = () => {
-    const { release } = useLatestRelease();
+    const { release, totalDownloads } = useLatestRelease();
 
     return (
         <div className={"flex flex-1 items-center justify-center min-h-screen mt-30 xl:mt-0 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
@@ -72,9 +74,9 @@ const HeroSec = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                        <div className="text-4xl font-mono mb-2">100%</div>
+                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads} <RiDownloadCloud2Line /></div>
                         <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
-                            More Efficient
+                            Downloads
                         </div>
                     </div>
                     <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group">
@@ -84,7 +86,7 @@ const HeroSec = () => {
                         </div>
                     </div>
                     <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                        <div className="text-4xl font-mono mb-2">70+</div>
+                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">70+ <HiOutlineCog6Tooth /></div>
                         <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
                             Modules
                         </div>

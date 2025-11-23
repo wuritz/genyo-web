@@ -9,6 +9,26 @@
   ,
   modules: [
     {
+      name: Auto Crawl Trap,
+      description: Places blocks to keep enemies in crawl,
+      category: Combat
+    },
+    {
+      name: Auto Web,
+      description: Automatically traps nearby entities in webs,
+      category: Combat
+    },
+    {
+      name: Base Place,
+      description: Places obsidian for crystal placements,
+      category: Combat
+    },
+    {
+      name: Friend Protector,
+      description: Protects friends by trapping them.,
+      category: Combat
+    },
+    {
       name: Genyo Auto Armor,
       description: Automatically replaces armor pieces.,
       category: Combat
@@ -51,6 +71,11 @@
     {
       name: Auto Brainrot,
       description: Traumatize your surroundings or the whole server.,
+      category: Misc
+    },
+    {
+      name: Auto Rename,
+      description: 'Can I talk my shit again?',
       category: Misc
     },
     {
@@ -139,11 +164,6 @@
       category: Movement
     },
     {
-      name: Tsunoda Blinker,
-      description: Yuki's short as fuck,
-      category: Movement
-    },
-    {
       name: Angel Sex Hulkenberg,
       description: 'jön a verstappen, nekiütközött a verstappen, kiesik a verstappen',
       category: Visual
@@ -220,7 +240,8 @@
     },
     {
       name: Pvp Neccessary,
-      description: Fasz fasz fasz fasz fasz fasz.
+      description: Fasz fasz fasz fasz fasz fasz.,
+      category: Hud
     },
     {
       name: Active Genyo,
@@ -266,4 +287,5 @@
         real information.
     }
   ]
+  
 }

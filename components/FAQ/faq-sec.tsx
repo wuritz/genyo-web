@@ -22,7 +22,7 @@ const questions: Item[] = [
     },
     {
         question: "This is just a skid, isn't it?",
-        answer: "Asked?"
+        answer: "Maybe?"
     },
     {
         question: "What is the point?",

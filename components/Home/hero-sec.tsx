@@ -2,12 +2,11 @@
 import React from 'react'
 import {Button} from "@/components/UI/button";
 import { ArrowRight  } from "lucide-react";
-import {TbBrandDiscord, TbBrandDiscordFilled, TbBrandGithub} from "react-icons/tb";
+import { TbBrandGithub } from "react-icons/tb";
 import {useLatestRelease} from "@/app/api/fetchGithub";
 import {FaDiscord} from "react-icons/fa";
-import {HiMiniSparkles, HiOutlineCog6Tooth} from "react-icons/hi2";
+import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
-import {MdOutlineDownloadDone} from "react-icons/md";
 import {RiDownloadCloud2Line} from "react-icons/ri";
 
 const HeroSec = () => {

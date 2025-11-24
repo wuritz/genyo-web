@@ -24,7 +24,6 @@ export interface YamlData {
     systems: SystemProps[];
 }
 
-// Read + parse YAML once at module load time (server-only)
 function loadYaml(): YamlData {
     const yamlPath = path.join(process.cwd(), "public", "genyo_info.yaml");
     const yamlRaw = fs.readFileSync(yamlPath, "utf8");

@@ -35,7 +35,7 @@ const ModulesSec = ({modules}: Props) => {
 
                 {/* Sidebar layout */}
                 <div className="flex flex-col lg:flex-row gap-6">
-                    {/* Sidebar - Categories with icons */}
+                    {/* Sidebar - Categories  */}
                     <div className="lg:w-64 flex-shrink-0">
                         <div className="border-2 border-black bg-white sticky top-30">
                             {categories.map((category, index) => {
@@ -67,7 +67,7 @@ const ModulesSec = ({modules}: Props) => {
                             SHOWING {filteredModules.length} MODULES
                         </div>
 
-                        {/* Modules Grid */}
+                        {/* Modules grid */}
                         <div className="grid md:grid-cols-2 gap-4">
                             {filteredModules.map((module, index) => (
                                 <div

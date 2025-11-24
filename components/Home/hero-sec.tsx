@@ -18,7 +18,7 @@ const HeroSec = () => {
             <div className="max-w-6xl w-full">
                 <div className="mb-12">
                     <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                        <div className="hidden xl:inline-block border-2 border-black px-4 py-1 mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
+                        <div className="inline-block border-2 border-black px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
                             <span className="font-mono text-xs uppercase ">Latest version • {release ? release.tag_name : "unknown"}</span>
                         </div>
                     </a>
@@ -79,8 +79,8 @@ const HeroSec = () => {
                             Downloads
                         </div>
                     </div>
-                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group">
-                        <div className="text-4xl font-mono mb-2">1.21.4</div>
+                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
+                        <div className="text-3xl md:text-4xl font-mono mb-2">1.21.4</div>
                         <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
                             Required
                         </div>
@@ -91,7 +91,7 @@ const HeroSec = () => {
                             Modules
                         </div>
                     </div>
-                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group">
+                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
                         <div className="text-4xl font-mono mb-2">YES</div>
                         <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
                             It Works*

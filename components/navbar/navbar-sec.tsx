@@ -1,13 +1,19 @@
 "use client";
 import React, {useEffect} from 'react'
 import NavbarButton from "@/components/navbar/navbar-button";
+import {useLocation} from "react-router";
 
 const NavbarSec = () => {
     const [invert, setInvert] = React.useState(false);
 
+    const path = window.location.pathname;
+    console.log(path);
+
     useEffect(() => {
         const handler = () => {
-            if (window.scrollY >= 90) setInvert(true);
+            if (path === "/" && window.scrollY >= 90) setInvert(true);
+            else if (path === "/faq" && window.scrollY >= 120) setInvert(true);
+            else if (path === "/suggest" && window.scrollY >= 75) setInvert(true);
             else setInvert(false);
         };
 
@@ -26,7 +32,9 @@ const NavbarSec = () => {
                 </a>
                 <div className="flex gap-4">
                     <NavbarButton invert={invert} text={"FAQ"} link={"/faq"} target={false} />
-                    <NavbarButton invert={invert} text={"SUGGEST"} link={"/suggest"} target={false} />
+                    <div className={"hidden xl:block"}>
+                        <NavbarButton invert={invert} text={"SUGGEST"} link={"/suggest"} target={false} />
+                    </div>
                     <NavbarButton invert={invert} text={"GITHUB"} github={true} link={"https://github.com/wuritz/genyo-addon"} target={true}/>
                 </div>
             </div>

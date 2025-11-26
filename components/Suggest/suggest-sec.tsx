@@ -23,8 +23,8 @@ const SuggestSec = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (moduleName && description && selectedCategory) {
-            // Mock submission
             console.log({ moduleName, description, category: selectedCategory });
+
             setSubmitted(true);
             setTimeout(() => {
                 setModuleName("");
@@ -42,11 +42,11 @@ const SuggestSec = () => {
                 <div
                     className="border-4 border-black bg-black text-white p-6 mb-12"
                 >
-                    <h2 className="uppercase tracking-wider mb-2" style={{ fontFamily: "monospace" }}>
-                        got ideas?
+                    <h2 className="uppercase tracking-wider mb-2 text-xl" style={{ fontFamily: "monospace" }}>
+                        suggest a new module
                     </h2>
                     <p className="text-sm opacity-90">
-                        suggest a module. we will probably add it.
+                        fill out this beautiful form.
                     </p>
                 </div>
 
@@ -90,7 +90,7 @@ const SuggestSec = () => {
                                         type="button"
                                         onClick={() => setSelectedCategory(category)}
                                         className={`
-                      border-3 p-4 transition-all
+                      border-3 p-4 transition-all cursor-pointer
                       ${isSelected
                                             ? "bg-black text-white border-black"
                                             : "bg-white text-black border-black hover:bg-gray-100"
@@ -126,7 +126,7 @@ const SuggestSec = () => {
                             required
                         />
                         <p className="text-xs mt-2 opacity-60" style={{ fontFamily: "monospace" }}>
-                            be specific. we can&#39;t read minds. yet.
+                            be specific please.
                         </p>
                     </div>
 
@@ -139,7 +139,7 @@ const SuggestSec = () => {
                 border-4 border-black px-8 py-4 uppercase tracking-wider transition-all
                 ${submitted
                                 ? "bg-green-400 text-black"
-                                : "bg-black text-white hover:bg-white hover:text-black disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
+                                : "bg-black text-white hover:bg-white hover:text-black cursor-pointer disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed"
                             }
               `}
                             style={{

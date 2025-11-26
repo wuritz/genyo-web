@@ -4,6 +4,7 @@ import "./globals.css";
 import NavbarSec from "@/components/navbar/navbar-sec";
 import React from "react";
 import FooterSec from "@/components/footer-sec";
+import DownloadSec from "@/components/download-sec";
 
 const font = Inter({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -24,7 +25,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} antialiased`}>
         <NavbarSec />
-        {children}
+
+        <div className={"min-h-screen bg-white text-black scroll-smooth"}>
+            <section className={"relative flex flex-col"}>
+                {children}
+            </section>
+        </div>
+
+        <DownloadSec />
         <FooterSec />
       </body>
     </html>

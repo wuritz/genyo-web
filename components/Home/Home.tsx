@@ -8,15 +8,12 @@ import TeamSec from "@/components/Home/team-sec";
 
 const Home = () => {
     return (
-        <div className={"min-h-screen bg-white text-black scroll-smooth"}>
-            <section className={"relative flex flex-col"}>
-                <HeroSec />
-                <ModulesSec modules={genyoModules} />
-                <WhySec />
-                <TeamSec />
-                <DownloadSec />
-            </section>
-        </div>
+        <section>
+            <HeroSec />
+            <ModulesSec modules={genyoModules} />
+            <WhySec />
+            <TeamSec />
+        </section>
     )
 }
 export default Home

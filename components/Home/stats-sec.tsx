@@ -8,7 +8,7 @@ type Stats = {
     total: number;
 };
 
-const STATS_URL = process.env.PUBLIC_STATS_URL || "";
+const STATS_URL = process.env.NEXT_PUBLIC_STATS_URL || "";
 
 const StatsSec = () => {
     const [onlineUsers, setOnlineUsers] = useState(0);

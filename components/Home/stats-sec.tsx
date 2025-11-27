@@ -26,7 +26,6 @@ const StatsSec = () => {
                 }
 
                 const data = (await res.json()) as Stats;
-                console.info("Parsed stats:", data);
 
                 if (!isMounted) return;
                 setTotalUsers(data.total ?? 0);

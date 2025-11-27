@@ -1,14 +1,13 @@
 "use client";
 import React, {useEffect, useState} from 'react'
 import { Users, Eye } from "lucide-react";
-import {setInterval} from "node:timers";
 
 type Stats = {
     online: number;
     total: number;
 };
 
-const STATS_URL = process.env.NEXT_PUBLIC_STATS_URL ?? "";
+const STATS_URL = "https://genyo-stats-557dfbb57e5f.herokuapp.com/stats";
 
 const StatsSec = () => {
     const [onlineUsers, setOnlineUsers] = useState(0);
@@ -41,7 +40,7 @@ const StatsSec = () => {
 
         fetchStats();
 
-        const interval = setInterval(fetchStats, 60000);
+        const interval = window.setInterval(fetchStats, 60000);
 
         return () => {
             isMounted = false;

@@ -18,6 +18,8 @@ const StatsSec = () => {
         let isMounted = true;
 
         const fetchStats = async () => {
+            console.log(process.env.NEXT_PUBLIC_STATS_URL);
+
             try {
                 const res = await fetch(STATS_URL, { cache: "no-store" });
 

@@ -44,6 +44,7 @@ export function useLatestRelease() {
                 );
 
                 if (!latestRes.ok) {
+                    console.error(`GitHub API error: ${latestRes.status} ${latestRes.statusText}`);
                     throw new Error(`GitHub API error: ${latestRes.status} ${latestRes.statusText}`);
                 }
 

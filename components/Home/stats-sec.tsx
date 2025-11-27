@@ -17,10 +17,12 @@ const StatsSec = () => {
         let isMounted = true;
 
         const fetchStats = async () => {
-            console.log(process.env.NEXT_PUBLIC_STATS_URL);
-
             try {
                 const res = await fetch(STATS_URL, { cache: "no-store" });
+
+                const text = await res.text();
+                console.log("Raw response text:", text);
+                console.log("HTTP status:", res.status);
 
                 if (!res.ok) {
                     console.error("Failed to fetch stats: ", res.status);
@@ -28,7 +30,7 @@ const StatsSec = () => {
                 }
 
                 const data = (await res.json()) as Stats;
-                console.info(data);
+                console.info("Parsed stats:", data);
 
                 if (!isMounted) return;
                 setTotalUsers(data.total ?? 0);

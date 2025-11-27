@@ -20,10 +20,6 @@ const StatsSec = () => {
             try {
                 const res = await fetch(STATS_URL, { cache: "no-store" });
 
-                const text = await res.text();
-                console.log("Raw response text:", text);
-                console.log("HTTP status:", res.status);
-
                 if (!res.ok) {
                     console.error("Failed to fetch stats: ", res.status);
                     return;

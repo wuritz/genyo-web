@@ -5,12 +5,14 @@ import {genyoModules} from "@/app/api/genyo/genyoData";
 import WhySec from "@/components/Home/why-sec";
 import DownloadSec from "@/components/download-sec";
 import TeamSec from "@/components/Home/team-sec";
+import StatsSec from "@/components/Home/stats-sec";
 
 const Home = () => {
     return (
         <div className={"min-h-screen bg-white text-black scroll-smooth"}>
             <section className={"relative flex flex-col"}>
                 <HeroSec />
+                <StatsSec />
                 <ModulesSec modules={genyoModules} />
                 <WhySec />
                 <TeamSec />

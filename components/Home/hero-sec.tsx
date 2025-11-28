@@ -40,7 +40,7 @@ const HeroSec = () => {
                     </div>
 
                     <div className="flex flex-wrap gap-4 mb-12">
-                        <DownloadButton />
+                        <DownloadButton invert={false} />
                         <a href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
                             <Button
                                 size="lg"

@@ -51,7 +51,7 @@ const StatsSec = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                     {/* Online Users */}
                     <div
-                        className="border-4 border-gray-300 bg-white p-6 relative overflow-hidden"
+                        className="border-4 border-white bg-white p-6 relative overflow-hidden"
                     >
                         <div className="flex items-start justify-between">
                             <div>
@@ -66,7 +66,7 @@ const StatsSec = () => {
                                     <span className="text-sm opacity-60">users</span>
                                 </div>
                                 <div className="top-3 right-3 mt-3 flex items-center gap-1">
-                                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                                     <span className="text-xs uppercase" style={{ fontFamily: "monospace" }}>live</span>
                                 </div>
                             </div>

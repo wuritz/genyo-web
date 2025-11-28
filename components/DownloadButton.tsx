@@ -1,7 +1,11 @@
 "use client";
 import React from 'react'
 import {Button} from "@/components/UI/button";
-import {ArrowRight} from "lucide-react";
+import {ArrowRight, Download} from "lucide-react";
+
+type Props = {
+    invert: boolean;
+}
 
 type GitHubAsset = {
     name: string;
@@ -13,12 +17,11 @@ type GitHubRelease = {
     assets: GitHubAsset[];
 };
 
-const DownloadButton = () => {
+const DownloadButton = ({ invert }: Props) => {
     const [loading, setLoading] = React.useState(false);
     const [error, setError] = React.useState<string | null>(null);
 
     const handleDownload = async () => {
-        console.log("hi");
         try {
             setLoading(true);
             setError(null);
@@ -55,11 +58,13 @@ const DownloadButton = () => {
     return (
         <Button
             size={"lg"}
-            className={"bg-black text-white hover:bg-gray-800 font-mono uppercase border-2 border-black rounded-none group cursor-pointer"}
+            className={invert ? "bg-white text-black hover:bg-gray-200 font-mono uppercase border-2 border-white rounded-none cursor-pointer"
+                : "bg-black text-white hover:bg-gray-800 font-mono uppercase border-2 border-black rounded-none group cursor-pointer"}
             onClick={handleDownload}
         >
+            <Download className="mr-2 h-4 w-4" />
             DOWNLOAD
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            {invert ? "" : <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />}
         </Button>
     )
 }

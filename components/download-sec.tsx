@@ -3,6 +3,7 @@ import {Button} from "@/components/UI/button";
 import { Download } from "lucide-react";
 import {TbBrandGithub} from "react-icons/tb";
 import {FaDiscord} from "react-icons/fa";
+import DownloadButton from "@/components/DownloadButton";
 
 const DownloadSec = () => {
     return (
@@ -22,15 +23,7 @@ const DownloadSec = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <a href={"https://github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                            <Button
-                                size="lg"
-                                className="bg-white text-black hover:bg-gray-200 font-mono uppercase border-2 border-white rounded-none cursor-pointer"
-                            >
-                                <Download className="mr-2 h-4 w-4" />
-                                DOWNLOAD NOW
-                            </Button>
-                        </a>
+                        <DownloadButton invert={true} />
                         <a href={"https://github.com/wuritz/genyo-addon"} target={"_blank"}>
                             <Button
                                 size="lg"

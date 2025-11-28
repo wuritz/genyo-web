@@ -9,6 +9,7 @@ import {HiMiniSparkles, HiOutlineCog6Tooth} from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
 import {MdOutlineDownloadDone} from "react-icons/md";
 import {RiDownloadCloud2Line} from "react-icons/ri";
+import DownloadButton from "@/components/DownloadButton";
 
 const HeroSec = () => {
     const { release, totalDownloads } = useLatestRelease();
@@ -39,15 +40,7 @@ const HeroSec = () => {
                     </div>
 
                     <div className="flex flex-wrap gap-4 mb-12">
-                        <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                            <Button
-                                size="lg"
-                                className="bg-black text-white hover:bg-gray-800 font-mono uppercase border-2 border-black rounded-none group cursor-pointer"
-                            >
-                                DOWNLOAD
-                                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                            </Button>
-                        </a>
+                        <DownloadButton />
                         <a href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
                             <Button
                                 size="lg"

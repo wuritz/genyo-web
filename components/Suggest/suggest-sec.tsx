@@ -36,7 +36,7 @@ const SuggestSec = () => {
     };
 
     return (
-        <section className="border-t-4 border-black py-20 px-6 bg-white">
+        <section className="py-20 px-6 bg-white">
             <div className="max-w-4xl mx-auto mt-20">
                 {/* Header */}
                 <div

@@ -1,11 +1,10 @@
 import React from 'react'
-import HeroSec from "@/components/Home/hero-sec";
-import ModulesSec from "@/components/Home/modules-sec";
+import HeroSec from "@/components/Home/sections/hero-sec";
+import ModulesSec from "@/components/Home/sections/modules-sec";
 import {genyoModules} from "@/app/api/genyo/genyoData";
-import WhySec from "@/components/Home/why-sec";
-import DownloadSec from "@/components/download-sec";
-import TeamSec from "@/components/Home/team-sec";
-import ScreenshotsSec from "@/components/Home/screenshots-sec";
+import WhySec from "@/components/Home/sections/why-sec";
+import TeamSec from "@/components/Home/sections/team/team-sec";
+import ScreenshotsSec from "@/components/Home/sections/screenshots/screenshots-sec";
 
 const Home = () => {
     return (

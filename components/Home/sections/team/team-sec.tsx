@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamCard from "@/components/Home/team/team-card";
+import TeamCard from "@/components/Home/sections/team/team-card";
 
 const TeamSec = () => {
     return (

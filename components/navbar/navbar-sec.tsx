@@ -7,7 +7,6 @@ const NavbarSec = () => {
     const [invert, setInvert] = React.useState(false);
 
     const path = window.location.pathname;
-    console.log(path);
 
     useEffect(() => {
         const handler = () => {

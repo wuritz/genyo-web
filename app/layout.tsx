@@ -12,8 +12,14 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Genyo Addon",
-  description: "Utility Meteor addon powered by special people's special minds.",
+    title: {
+        template: '%s - Genyo Addon',
+        default: 'Genyo Addon'
+    },
+    description: "Utility Meteor addon powered by special people's special minds.",
+    keywords: ["Minecraft", "Meteor", "Meteor Client", "Fabric", "Mod", "Modding", "Modded", "Hacked", "Client", "Anarchy", "2b2t", "9b9t"],
+    authors: [{ name: "wuritz" }],
+    creator: "wuritz"
 };
 
 export default function RootLayout({

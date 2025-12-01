@@ -14,10 +14,10 @@ const HeroSec = () => {
 
     return (
         <div className={"flex flex-1 items-center justify-center min-h-screen mt-30 xl:mt-0 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-            <div className="max-w-6xl w-full">
-                <div className="mb-12">
+            <div className={"max-w-6xl w-full"}>
+                <div className={"mb-12"}>
                     <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                        <div className="inline-block border-2 border-black px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
+                        <div className={"inline-block border-2 border-black px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer"}>
                             <span className="font-mono text-xs uppercase ">Latest version • {release ? release.tag_name : "unknown"}</span>
                         </div>
                     </a>
@@ -73,7 +73,7 @@ const HeroSec = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads} <RiDownloadCloud2Line /></div>
+                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads ?? "0"} <RiDownloadCloud2Line /></div>
                         <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
                             Downloads
                         </div>

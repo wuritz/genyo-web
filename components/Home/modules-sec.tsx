@@ -24,7 +24,7 @@ const ModulesSec = ({modules}: Props) => {
     const filteredModules = modules.filter(module => module.category === selectedCategory);
 
     return (
-        <section className="border-t-4 border-black py-20 px-6 bg-gray-50 min-h-screen">
+        <section id={"modules"} className="border-t-4 border-black py-20 px-6 bg-gray-50 min-h-screen">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
                     <h2 className="mb-4 leading-none">MODULES</h2>

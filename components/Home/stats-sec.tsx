@@ -51,7 +51,7 @@ const StatsSec = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                     {/* Online Users */}
                     <div
-                        className="border-4 border-white bg-white p-6 relative overflow-hidden"
+                        className="border-4 border-white bg-white hover:bg-black hover:text-white p-6 relative overflow-hidden transition-all duration-200"
                     >
                         <div className="flex items-start justify-between">
                             <div>
@@ -79,7 +79,7 @@ const StatsSec = () => {
 
                     {/* Total Users */}
                     <div
-                        className="border-4 border-white bg-black text-white p-6"
+                        className="border-4 border-white bg-black text-white hover:bg-white hover:text-black p-6 transition-all duration-200"
                     >
                         <div className="flex items-start justify-between">
                             <div>

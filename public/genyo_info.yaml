@@ -105,7 +105,7 @@
     },
     {
       name: Genyo Discord,
-      description: this one is superior to the original module because its genyo,
+      description: Genyo Discord RPC for you to show off.,
       category: Misc
     },
     {
@@ -164,11 +164,6 @@
       category: Movement
     },
     {
-      name: Angel Sex Hulkenberg,
-      description: 'jön a verstappen, nekiütközött a verstappen, kiesik a verstappen',
-      category: Visual
-    },
-    {
       name: Genyo Capes,
       description: The thing,
       category: Visual
@@ -176,6 +171,11 @@
     {
       name: Genyo Nametags,
       description: 'Same as Meteor Nametags, pop counter included',
+      category: Visual
+    },
+    {
+      name: parkinsons,
+      description: Funnier freecam,
       category: Visual
     },
     {
@@ -205,6 +205,11 @@
     },
     {
       name: Genyo AutoMine,
+      description: fasz,
+      category: World
+    },
+    {
+      name: Genyo AutoMineV2,
       description: fasz,
       category: World
     },
@@ -271,6 +276,11 @@
     {
       name: Ping,
       description: Displays the server's ping. (turn on FastLatency),
+      category: Hud
+    },
+    {
+      name: Target Hud,
+      description: Displays info about your crystal/killaura target.,
       category: Hud
     }
   ]

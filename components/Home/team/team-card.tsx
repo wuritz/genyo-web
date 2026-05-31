@@ -26,7 +26,7 @@ const TeamCard = ({ username, image, role }: Props) => {
                 </div>
 
                 <div>
-                    <h3 className="font-mono uppercase mb-1">{username}</h3>
+                    <h3 className="font-mono mb-1">{username}</h3>
                     <div className="text-xs text-gray-500 group-hover:text-gray-300 font-mono">
                         {role}
                     </div>

@@ -34,7 +34,7 @@ const DownloadSec = () => {
                                 GITHUB
                             </Button>
                         </a>
-                        <a href={"https://discord.gg/5nrEVnm6zJ"} target={"_blank"}>
+                        <a href={"/discord"} target={"_blank"}>
                             <Button
                                 size="lg"
                                 variant="outline"

@@ -6,14 +6,14 @@ const FooterSec = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="font-mono text-sm text-gray-600">
-                        MADE WITH QUESTIONABLE LIFE CHOICES.
+                        MADE WITH SHITS AND GIGGLES.
                     </div>
                     <div className="font-mono text-sm text-gray-600">
-                        WURITZ © 2025
+                        WURITZ © 2026
                     </div>
                 </div>
                 <div className="mt-4 text-center text-xs text-gray-400">
-                    DISCLAIMER: YUKI IS SHORT.
+                    Yuki is short.
                 </div>
             </div>
         </footer>

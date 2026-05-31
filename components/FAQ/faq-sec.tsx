@@ -82,7 +82,7 @@ const FaqSec = () => {
                     <p className="text-sm leading-relaxed">
                         <span className="font-mono uppercase">STILL HAVE QUESTIONS?</span>
                         <br />
-                        <a className="text-blue-600 hover:underline" href={"https://discord.gg/5nrEVnm6zJ"} target={"_blank"}>
+                        <a className="text-blue-600 hover:underline" href={"/discord"} target={"_blank"}>
                             Join Discord. Join Discord. Join Discord. Join Discord. Join Discord.
                         </a>
                     </p>

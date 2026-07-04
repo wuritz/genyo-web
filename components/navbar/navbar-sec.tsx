@@ -26,7 +26,7 @@ const NavbarSec = () => {
                 </a>
                 <div className="flex gap-4">
                     <NavbarButton invert={invert} text={"FAQ"} link={"/faq"} target={false} />
-                    <NavbarButton invert={invert} text={"GITHUB"} github={true} link={"https://github.com/wuritz/genyo-addon"} target={true}/>
+                    <NavbarButton invert={invert} text={"GITHUB"} github={true} link={"/github"} target={true}/>
                 </div>
             </div>
         </nav>

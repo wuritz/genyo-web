@@ -24,7 +24,7 @@ const DownloadSec = () => {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                         <DownloadButton invert={true} />
-                        <a href={"https://github.com/wuritz/genyo-addon"} target={"_blank"}>
+                        <a href={"/github"} target={"_blank"}>
                             <Button
                                 size="lg"
                                 variant="outline"

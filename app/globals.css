@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #000; /* Ensuring body has a dark base below the hero */
+    color: #fff;
+}
+
 #gradient-color {
     position: absolute;
     top: 0;
@@ -12,38 +17,6 @@ html {
     height: 100%;
     background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #ff0000 100%), linear-gradient(360deg, #0029ff 0%, #8fff00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%), radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
     background-blend-mode: screen, color-dodge, overlay, difference, normal;
-}
-
-#blob {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
-    overflow: visible;
-    background-color: white;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-}
-
-#blob::before {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    background-color: #000;
-}
-
-#blob::after {
-    content: "";
-    width: 34vmax;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #fff;
-    animation: rotate 20s infinite;
 }
 
 @keyframes rotate {
@@ -56,14 +29,6 @@ html {
     to {
         rotate: 360deg;
     }
-}
-
-#blur {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    backdrop-filter: blur(8vmax);
-    pointer-events: none;
 }
 
 @custom-variant display ( "group-hover" );

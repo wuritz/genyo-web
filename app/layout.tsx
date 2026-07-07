@@ -4,7 +4,6 @@ import "./globals.css";
 import NavbarSec from "@/components/navbar/navbar-sec";
 import React from "react";
 import FooterSec from "@/components/footer-sec";
-import BlobCursor from "@/components/BlobCursor";
 
 const font = Inter({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -21,18 +20,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+   children,
+   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-        <body className={`${font.className} antialiased`}>
-            <BlobCursor />
-            <NavbarSec />
-            {children}
-            <FooterSec />
-        </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={`${font.className} antialiased`}>
+                <NavbarSec />
+                {children}
+                <FooterSec />
+            </body>
+        </html>
+    );
 }

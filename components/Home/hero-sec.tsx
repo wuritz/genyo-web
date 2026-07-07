@@ -8,18 +8,15 @@ import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
 import {RiDownloadCloud2Line} from "react-icons/ri";
 import DownloadButton from "@/components/DownloadButton";
+import BlobCursor from "@/components/BlobCursor";
 
 const HeroSec = () => {
     const { release, totalDownloads } = useLatestRelease();
 
     return (
-        <div className={"flex flex-1 items-center justify-center min-h-screen mt-30 xl:mt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-            <div className="max-w-6xl w-full">
-{/*                <div className={"absolute flex flex-col"}>
-                    <div className={"absolute w-100 h-100 top-50 bg-purple-500 rounded-full mix-blend-multiply blur-2xl"}></div>
-                    <div className={"absolute w-150 h-150 left-20 -top-35 bg-yellow-300 rounded-full opacity-80 mix-blend-multiply blur-2xl"}></div>
-                    <div className={"absolute w-130 h-130 -left-70 bg-pink-300 rounded-full opacity-90 mix-blend-multiply blur-2xl"}></div>
-                </div>*/}
+        <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
+            <BlobCursor />
+            <div className="relative z-10 max-w-6xl w-full">
 
                 <div className={"relative"}>
                     <div className="mb-12">
@@ -103,6 +100,7 @@ const HeroSec = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 export default HeroSec

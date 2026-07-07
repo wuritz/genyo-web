@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSec from "@/components/Home/hero-sec";
+import HeroSec from "@/components/Home/hero/hero-sec";
 import ModulesSec from "@/components/Home/modules-sec";
 import {genyoModules} from "@/app/api/genyo/genyoData";
 import WhySec from "@/components/Home/why-sec";

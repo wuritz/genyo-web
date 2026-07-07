@@ -4,7 +4,9 @@ import React, { useEffect, useRef } from 'react';
 function BlobCursor() {
     const rootRef = useRef<HTMLDivElement | null>(null);
     const blobWrapperRef = useRef<HTMLDivElement | null>(null);
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
+    // cursor blob thing
     useEffect(() => {
         const wrapper = blobWrapperRef.current;
         const root = rootRef.current;
@@ -52,12 +54,78 @@ function BlobCursor() {
         };
     }, []);
 
+    // night sky :3
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        const root = rootRef.current;
+        if (!canvas || !root) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        let frameId: number;
+
+        let stars: { x: number; y: number; r: number; a: number; da: number; dx: number; dy: number }[] = [];
+
+        const resizeAndInit = () => {
+            canvas.width = root.clientWidth;
+            canvas.height = root.clientHeight;
+
+            stars = [];
+            for (let i = 0; i < 150; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    r: Math.random() * 1.5 + 0.5,
+                    a: Math.random(),
+                    da: (Math.random() - 0.5) * 0.07,
+                    dx: (Math.random() - 0.5) * 0.8,
+                    dy: (Math.random() - 0.5) * 0.8
+                });
+            }
+        };
+
+        const renderStars = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            stars.forEach((star) => {
+                star.a += star.da;
+                if (star.a <= 0.1 || star.a >= 1) {
+                    star.da = -star.da;
+                }
+
+                star.x += star.dx;
+                star.y += star.dy;
+
+                if (star.x < 0) star.x = canvas.width;
+                if (star.x > canvas.width) star.x = 0;
+                if (star.y < 0) star.y = canvas.height;
+                if (star.y > canvas.height) star.y = 0;
+
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${star.a})`;
+                ctx.fill();
+            });
+
+            frameId = requestAnimationFrame(renderStars);
+        };
+
+        window.addEventListener('resize', resizeAndInit);
+        resizeAndInit();
+        renderStars();
+
+        return () => {
+            window.removeEventListener('resize', resizeAndInit);
+            cancelAnimationFrame(frameId);
+        };
+    }, []);
+
     return (
         <div ref={rootRef} className="absolute inset-0 overflow-hidden pointer-events-none z-0 bg-black">
             <div id="gradient-color"></div>
 
             <div className="absolute inset-0 bg-black mix-blend-multiply">
-
                 <div
                     ref={blobWrapperRef}
                     className="absolute opacity-0 transition-opacity duration-300 ease-in-out"
@@ -76,10 +144,11 @@ function BlobCursor() {
                         }}
                     ></div>
                 </div>
-
             </div>
 
             <div className="absolute inset-0 backdrop-blur-[8vmax]"></div>
+
+            <canvas ref={canvasRef} className="absolute inset-0 opacity-60 z-10"></canvas>
         </div>
     );
 }

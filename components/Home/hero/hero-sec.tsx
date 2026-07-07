@@ -8,7 +8,7 @@ import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
 import {RiDownloadCloud2Line} from "react-icons/ri";
 import DownloadButton from "@/components/DownloadButton";
-import BlobCursor from "@/components/BlobCursor";
+import BlobCursor from "@/components/Home/hero/BlobCursor";
 
 const HeroSec = () => {
     const { release, totalDownloads } = useLatestRelease();

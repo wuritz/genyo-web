@@ -16,8 +16,6 @@ function BlobCursor() {
         let isInside = false;
 
         const updatePosition = () => {
-            // The wrapper handles tracking. Centering is safe here because
-            // the animation is delegated to the child element.
             wrapper.style.left = `${pointerX}px`;
             wrapper.style.top = `${pointerY}px`;
             frameId = null;
@@ -56,13 +54,10 @@ function BlobCursor() {
 
     return (
         <div ref={rootRef} className="absolute inset-0 overflow-hidden pointer-events-none z-0 bg-black">
-            {/* Base Gradient Layer */}
             <div id="gradient-color"></div>
 
-            {/* Multiply Mask Layer */}
             <div className="absolute inset-0 bg-black mix-blend-multiply">
 
-                {/* 1. The Wrapper: Handles centering and tracking WITHOUT animation */}
                 <div
                     ref={blobWrapperRef}
                     className="absolute opacity-0 transition-opacity duration-300 ease-in-out"
@@ -72,20 +67,18 @@ function BlobCursor() {
                         top: '50%',
                     }}
                 >
-                    {/* 2. The Inner Blob: Handles the rotating and scaling animation independently */}
                     <div
                         className="rounded-full bg-white"
                         style={{
                             width: '34vmax',
                             aspectRatio: '1',
-                            animation: 'rotate 20s infinite linear' // Added 'linear' for smooth rotation
+                            animation: 'rotate 20s infinite linear'
                         }}
                     ></div>
                 </div>
 
             </div>
 
-            {/* Frost Blur Layer */}
             <div className="absolute inset-0 backdrop-blur-[8vmax]"></div>
         </div>
     );

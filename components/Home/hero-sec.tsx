@@ -15,84 +15,92 @@ const HeroSec = () => {
     return (
         <div className={"flex flex-1 items-center justify-center min-h-screen mt-30 xl:mt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
             <div className="max-w-6xl w-full">
-                <div className="mb-12">
-                    <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
-                        <div className="inline-block border-2 border-black px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
-                            <span className="font-mono text-xs uppercase ">Latest version • {release ? release.tag_name : "unknown"}</span>
-                        </div>
-                    </a>
+{/*                <div className={"absolute flex flex-col"}>
+                    <div className={"absolute w-100 h-100 top-50 bg-purple-500 rounded-full mix-blend-multiply blur-2xl"}></div>
+                    <div className={"absolute w-150 h-150 left-20 -top-35 bg-yellow-300 rounded-full opacity-80 mix-blend-multiply blur-2xl"}></div>
+                    <div className={"absolute w-130 h-130 -left-70 bg-pink-300 rounded-full opacity-90 mix-blend-multiply blur-2xl"}></div>
+                </div>*/}
 
-                    <h1 className="flex mb-6 text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
-                        Genyo Addon
-                        <IoSparklesOutline className={"ml-5"}/>
-                    </h1>
-
-                    <div className="max-w-2xl mb-8">
-                        <p className="text-md xl:text-xl leading-relaxed">
-                            The best utility addon for <a className={"text-gray-600 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</a>,
-                            filled with Shoreline and Genyo magic :D
-                        </p>
-                        <p className="text-sm xl:text-lg text-gray-500 mt-4">
-                            Powered by special people&#39;s special minds.
-                        </p>
-                    </div>
-
-                    <div className="flex flex-wrap gap-4 mb-12">
-                        <DownloadButton invert={false} />
-                        <a href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
-                            <Button
-                                size="lg"
-                                variant="outline"
-                                className="border-2 border-black rounded-none font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
-                            >
-                                <TbBrandGithub className="mr-2 h-4 w-4" />
-                                GITHUB
-                            </Button>
+                <div className={"relative"}>
+                    <div className="mb-12">
+                        <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
+                            <div className="inline-block border-2 border-white px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
+                                <span className="font-mono text-xs uppercase text-white">Latest version • {release ? release.tag_name : "unknown"}</span>
+                            </div>
                         </a>
-                        <a href={"/discord"} target={"_blank"}>
-                            <Button
-                                size="lg"
-                                variant="outline"
-                                className="border-2 border-black rounded-none bg-blue-100 font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
-                            >
-                                <FaDiscord className="mr-2 h-4 w-4" />
-                                DISCORD
-                            </Button>
-                        </a>
-                    </div>
-                </div>
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads ?? "0"} <RiDownloadCloud2Line /></div>
-                        <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
-                            Downloads
-                        </div>
-                    </div>
-                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
-                        <div className="text-3xl md:text-4xl font-mono mb-2">1.21.11</div>
-                        <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
-                            MC version
-                        </div>
-                    </div>
-                    <div className="border-2 border-black p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                        <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">70+ <HiOutlineCog6Tooth /></div>
-                        <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
-                            Modules
-                        </div>
-                    </div>
-                    <div className="border-2 border-black p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
-                        <div className="text-4xl font-mono mb-2">YES</div>
-                        <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
-                            It Works*
-                        </div>
-                    </div>
-                </div>
+                        <h1 className="flex mb-6 text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
+                            Genyo Addon
+                            <IoSparklesOutline className={"ml-5"}/>
+                        </h1>
 
-                <p className="mt-4 text-sm text-gray-400 font-mono">
-                    *BUGS ARE CONSIDERED TO BE FEATURES AROUND HERE
-                </p>
+                        <div className="max-w-2xl mb-8">
+                            <p className="text-md xl:text-xl leading-relaxed text-white">
+                                The best utility addon for <a className={"text-blue-500 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</a>,
+                                filled with Shoreline and Genyo magic :D
+                            </p>
+                            <p className="text-sm xl:text-lg text-gray-300 mt-4">
+                                Powered by special people&#39;s special minds.
+                            </p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-4 mb-12">
+                            <DownloadButton invert={false} />
+                            <a href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-2 border-white rounded-none font-mono uppercase hover:bg-black text-white cursor-pointer"
+                                >
+                                    <TbBrandGithub className="mr-2 h-4 w-4" />
+                                    GITHUB
+                                </Button>
+                            </a>
+                            <a href={"/discord"} target={"_blank"}>
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-2 border-black rounded-none bg-blue-100 font-mono uppercase hover:bg-black hover:text-white cursor-pointer"
+                                >
+                                    <FaDiscord className="mr-2 h-4 w-4" />
+                                    DISCORD
+                                </Button>
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div className="border-2 border-white p-6 bg-white hover:bg-black hover:text-white transition-colors group">
+                            <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads ?? "0"} <RiDownloadCloud2Line /></div>
+                            <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
+                                Downloads
+                            </div>
+                        </div>
+                        <div className="border-2 border-white p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
+                            <div className="text-3xl md:text-4xl font-mono mb-2">1.21.11</div>
+                            <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
+                                MC version
+                            </div>
+                        </div>
+                        <div className="border-2 border-white p-6 bg-white hover:bg-black hover:text-white transition-colors group">
+                            <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">70+ <HiOutlineCog6Tooth /></div>
+                            <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
+                                Modules
+                            </div>
+                        </div>
+                        <div className="border-2 border-white p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
+                            <div className="text-4xl font-mono mb-2">YES</div>
+                            <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
+                                It Works*
+                            </div>
+                        </div>
+                    </div>
+
+                    <p className="mt-4 text-sm text-gray-400 font-mono">
+                        *BUGS ARE CONSIDERED TO BE FEATURES AROUND HERE
+                    </p>
+                </div>
             </div>
         </div>
     )

@@ -17,10 +17,10 @@ const NavbarSec = () => {
     }, []);
 
     return (
-        <nav className={`border-b-4 ${invert ? "backdrop-invert backdrop-blur-sm shadow-sm" : ""} border-black p-6 fixed w-full z-[1000] transition-all duration-300`}>
+        <nav className={`${invert ? "backdrop-invert backdrop-blur-sm shadow-sm border-b-4" : ""} border-black p-6 fixed w-full z-[1000] transition-all duration-300`}>
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 <a href={"/"}>
-                    <div className={`tracking-tight ${invert ? "text-white bg-black hover:text-black hover:bg-white hover:border-white" : "text-black hover:text-white hover:bg-black hover:border-black"} hover:px-3 transition-all duration-150 border-1 px-2 py-1`}>
+                    <div className={`tracking-tight ${invert ? "text-white bg-black hover:text-black hover:bg-white hover:border-white" : "text-white hover:text-white hover:bg-black bg-black hover:border-black"} hover:px-3 transition-all duration-150 border-1 px-2 py-1`}>
                         Genyo
                     </div>
                 </a>

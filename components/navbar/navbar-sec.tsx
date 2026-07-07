@@ -1,25 +1,33 @@
 "use client";
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
+import { usePathname } from 'next/navigation';
 import NavbarButton from "@/components/navbar/navbar-button";
 
 const NavbarSec = () => {
-    const [invert, setInvert] = React.useState(false);
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+
+    const [invert, setInvert] = React.useState(!isHomePage);
 
     useEffect(() => {
+        if (!isHomePage) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setInvert(true);
+            return;
+        }
+
         const handler = () => {
-            // Trigger once we've scrolled roughly past the hero section
-            // (min-h-screen), so the backdrop-invert never samples/inverts
-            // the BlobCursor gradient still visible behind the navbar.
             const threshold = window.innerHeight * 0.9;
             if (window.scrollY >= threshold) setInvert(true);
             else setInvert(false);
         };
 
         window.addEventListener("scroll", handler);
+
         handler();
 
         return () => window.removeEventListener("scroll", handler);
-    }, []);
+    }, [isHomePage]);
 
     return (
         <nav className={`${invert ? "backdrop-invert backdrop-blur-sm shadow-sm border-b-4" : ""} top-0 left-0 border-black p-6 fixed w-full z-[1000] transition-all duration-300`}>
@@ -37,4 +45,5 @@ const NavbarSec = () => {
         </nav>
     )
 }
-export default NavbarSec
+
+export default NavbarSec;

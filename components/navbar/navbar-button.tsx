@@ -1,5 +1,6 @@
 import React from 'react'
 import {TbBrandGithub} from "react-icons/tb";
+import Link from "next/link";
 
 type Props = {
     invert: boolean;
@@ -11,11 +12,11 @@ type Props = {
 
 const NavbarButton = ({invert, text, link, target, github}: Props) => {
     return (
-        <a href={link} target={target ? "_blank" : ""}>
-            <button className={`${invert ? "text-white border-white border-1 hover:bg-white hover:text-black" : "text-white border-white border-1 hover:bg-white hover:text-black"} ${github ? "flex flex-1 items-center" : ""} bg-black font-mono text-sm px-4 py-2 transition-colors cursor-pointer`}>
+        <Link href={link} target={target ? "_blank" : ""}>
+            <button className={`${invert ? "text-white border-white border hover:bg-white hover:text-black" : "text-white border-white hover:bg-white hover:text-black"} ${github ? "flex flex-1 items-center" : ""} bg-black font-mono text-sm px-4 py-2 border transition-colors cursor-pointer`}>
                 {github ? <TbBrandGithub className="mr-2 h-4 w-4" /> : ""} {text}
             </button>
-        </a>
+        </Link>
     )
 }
 export default NavbarButton

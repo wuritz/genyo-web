@@ -9,237 +9,320 @@
   ,
   modules: [
     {
+      name: Auto Anchor,
+      idForSEO: auto-anchor,
+      description: Automatically places and explodes respawn anchors,
+      category: Combat
+    },
+    {
       name: Auto Crawl Trap,
+      idForSEO: auto-crawl-trap,
       description: Places blocks to keep enemies in crawl,
       category: Combat
     },
     {
       name: Auto Web,
+      idForSEO: auto-web,
       description: Automatically traps nearby entities in webs,
       category: Combat
     },
     {
       name: Base Place,
+      idForSEO: base-place,
       description: Places obsidian for crystal placements,
       category: Combat
     },
     {
       name: Friend Protector,
+      idForSEO: friend-protector,
       description: Protects friends by trapping them.,
       category: Combat
     },
     {
       name: Genyo Auto Armor,
+      idForSEO: genyo-auto-armor,
       description: Automatically replaces armor pieces.,
       category: Combat
     },
     {
       name: Genyo Auto Totem,
+      idForSEO: genyo-auto-totem,
       description: Automatically replenishes the totem in your offhand,
       category: Combat
     },
     {
       name: Genyo Auto Trap,
+      idForSEO: genyo-auto-trap,
       description: Fully traps enemies with blocks.,
       category: Combat
     },
     {
       name: Genyo AutoCrystal,
+      idForSEO: genyo-autocrystal,
       description: asd,
       category: Combat
     },
     {
       name: Genyo AutoXP,
+      idForSEO: genyo-autoxp,
       description: better than blackout,
       category: Combat
     },
     {
       name: Genyo Criticals,
+      idForSEO: genyo-criticals,
       description: crrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr,
       category: Combat
     },
     {
       name: Genyo Replenish,
+      idForSEO: genyo-replenish,
       description: fwejhfkljwefklwejfklkwlefjlwefl,
       category: Combat
     },
     {
       name: KFC Spawn Kill,
+      idForSEO: kfc-spawn-kill,
       description: 'ask about the name, i won''t tell you.',
       category: Combat
     },
     {
+      name: Mine Esp,
+      idForSEO: mine-esp,
+      description: 'Featuring ESP Liquid effect, with Double Mine and Rebreak synchronization.',
+      category: Combat
+    },
+    {
       name: Auto Brainrot,
+      idForSEO: auto-brainrot,
       description: Traumatize your surroundings or the whole server.,
       category: Misc
     },
     {
+      name: Auto Portal,
+      idForSEO: auto-portal,
+      description: 'Builds a Nether portal with Delay, Auto-Refill, and Hotbar Cleanup.',
+      category: Misc
+    },
+    {
       name: Auto Rename,
+      idForSEO: auto-rename,
       description: 'Can I talk my shit again?',
       category: Misc
     },
     {
       name: Auto Sigma,
+      idForSEO: auto-sigma,
       description: 'and i heard em say, nothing''s ever promised tomorrow today',
       category: Misc
     },
     {
       name: Combat Brainrot,
+      idForSEO: combat-brainrot,
       description: says something sigma while in crystal pvp.,
       category: Misc
     },
     {
       name: einstein,
+      idForSEO: einstein,
       description: natural selection of society,
       category: Misc
     },
     {
       name: Fast Latency,
+      idForSEO: fast-latency,
       description: Calculates server ping (use with Ping HUD),
       category: Misc
     },
     {
       name: Genyo Auto Ez,
+      idForSEO: genyo-auto-ez,
       description: 'igen igen igen, dikta mamo tyibori.-----------------------------------------------------------------',
       category: Misc
     },
     {
       name: Genyo Discord,
+      idForSEO: genyo-discord,
       description: Genyo Discord RPC for you to show off.,
       category: Misc
     },
     {
       name: Genyo Goodbye,
+      idForSEO: genyo-goodbye,
       description: 'i hate kiwi. i hate kiwi. i hate kiwi. i hate kiwi. i hate kiwi. ',
       category: Misc
     },
     {
       name: Genyo Skin Blink,
+      idForSEO: genyo-skin-blink,
       description: 'i love kiwi. i love kiwi. i love kiwi. i love kiwi. ',
       category: Misc
     },
     {
       name: Genyo Swing,
+      idForSEO: genyo-swing,
       description: 'Change the swinginess (?) of the player''s hand',
       category: Misc
     },
     {
       name: Genyo Timer,
+      idForSEO: genyo-timer,
       description: Changes the change to the change and change.,
       category: Misc
     },
     {
       name: Genyo Welcome,
+      idForSEO: genyo-welcome,
       description: i love kiwi. i love kiwi. i love kiwi. i love kiwi. i love kiwi.,
       category: Misc
     },
     {
       name: No Packet Kick,
+      idForSEO: no-packet-kick,
       description: Prevents getting kicked by packets,
       category: Misc
     },
     {
       name: Packet Debug,
+      idForSEO: packet-debug,
       description: yweoikfjwekfjhewkfjwehfkjefhwehjkfhwehfkew.,
       category: Misc
     },
     {
       name: Anti Ladder,
+      idForSEO: anti-ladder,
       description: Prevents you from climbing ladders.,
       category: Movement
     },
     {
       name: Genyo No Slow,
+      idForSEO: genyo-no-slow,
       description: Prevents items from slowing the player.,
       category: Movement
     },
     {
       name: Genyo Phase,
+      idForSEO: genyo-phase,
       description: asd,
       category: Movement
     },
     {
       name: Genyo Velocity,
+      idForSEO: genyo-velocity,
       description: efhewhfjkhewfjhkewfh jekw,
       category: Movement
     },
     {
       name: Genyo Capes,
+      idForSEO: genyo-capes,
       description: The thing,
       category: Visual
     },
     {
       name: Genyo Nametags,
+      idForSEO: genyo-nametags,
       description: 'Same as Meteor Nametags, pop counter included',
       category: Visual
     },
     {
+      name: GyattESP,
+      idForSEO: gyattesp,
+      description: ya,
+      category: Visual
+    },
+    {
+      name: No Swing,
+      idForSEO: no-swing,
+      description: NoSwing u know use your brain mr.,
+      category: Visual
+    },
+    {
       name: parkinsons,
+      idForSEO: parkinsons,
       description: Funnier freecam,
       category: Visual
     },
     {
       name: PenisESP,
+      idForSEO: penisesp,
       description: faszfasz fasz fasz fasz fasz fsaz fasz,
       category: Visual
     },
     {
       name: Fast Place,
+      idForSEO: fast-place,
       description: Place items and blocks faster,
       category: World
     },
     {
       name: Genyo Auto Penis,
+      idForSEO: genyo-auto-penis,
       description: show genyo's bbc,
       category: World
     },
     {
       name: Genyo Auto Tool,
+      idForSEO: genyo-auto-tool,
       description: Yés,
       category: World
     },
     {
       name: Genyo Auto Windmill,
+      idForSEO: genyo-auto-windmill,
       description: Slam Genyo's windmill,
       category: World
     },
     {
       name: Genyo AutoMine,
+      idForSEO: genyo-automine,
       description: fasz,
       category: World
     },
     {
       name: Genyo AutoMineV2,
+      idForSEO: genyo-autominev2,
       description: fasz,
       category: World
     },
     {
       name: Genyo Ghost Blocks,
+      idForSEO: genyo-ghost-blocks,
       description: maybe,
       category: World
     },
     {
+      name: Genyo Nuker,
+      idForSEO: genyo-nuker,
+      description: Very fast block breaking brrr.,
+      category: World
+    },
+    {
       name: Genyo Scaffold,
+      idForSEO: genyo-scaffold,
       description: i shit the bed regularly,
       category: World
     },
     {
       name: Genyo SelfTrap,
+      idForSEO: genyo-selftrap,
       description: a funny one for sure.,
       category: World
     },
     {
       name: Genyo Speedmine,
+      idForSEO: genyo-speedmine,
       description: fasz fasz fsaz fasz,
       category: World
     },
     {
       name: Genyo Surround,
+      idForSEO: genyo-surround,
       description: haaaaaaaaaaaaaa,
       category: World
     },
     {
       name: Genyo Surround V2,
+      idForSEO: genyo-surround-v2,
       description: Today I am the shit after I wake the shit is Yes,
       category: World
     },

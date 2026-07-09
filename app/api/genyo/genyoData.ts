@@ -4,16 +4,12 @@ import { parse } from "yaml";
 
 export interface ModuleProps {
     name: string;
+    idForSEO: string;
     description: string;
     category: string;
 }
 
 export interface SystemProps {
-    name: string;
-    description: string;
-}
-
-export interface HudProps {
     name: string;
     description: string;
 }
@@ -53,6 +49,4 @@ function loadYaml(): YamlData {
 }
 const data = loadYaml();
 
-export const genyoCategories: string[] = data.categories;
 export const genyoModules: ModuleProps[] = data.modules;
-export const genyoSystems: SystemProps[] = data.systems;

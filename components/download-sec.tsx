@@ -4,6 +4,7 @@ import { Download } from "lucide-react";
 import {TbBrandGithub} from "react-icons/tb";
 import {FaDiscord} from "react-icons/fa";
 import DownloadButton from "@/components/DownloadButton";
+import Link from "next/link";
 
 const DownloadSec = () => {
     return (
@@ -23,8 +24,8 @@ const DownloadSec = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <DownloadButton invert={true} />
-                        <a href={"/github"} target={"_blank"}>
+                        <DownloadButton invert={true} navbar={false} />
+                        <Link href={"/github"} target={"_blank"}>
                             <Button
                                 size="lg"
                                 variant="outline"
@@ -33,8 +34,8 @@ const DownloadSec = () => {
                                 <TbBrandGithub className="mr-2 h-4 w-4" />
                                 GITHUB
                             </Button>
-                        </a>
-                        <a href={"/discord"} target={"_blank"}>
+                        </Link>
+                        <Link href={"/discord"} target={"_blank"}>
                             <Button
                                 size="lg"
                                 variant="outline"
@@ -43,7 +44,7 @@ const DownloadSec = () => {
                                 <FaDiscord className="mr-2 h-4 w-4" />
                                 DISCORD
                             </Button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

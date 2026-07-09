@@ -12,11 +12,33 @@ const font = Inter({
 
 export const metadata: Metadata = {
     title: {
-        template: '%s - Genyo Addon',
-        default: 'Genyo Addon'
+        template: '%s - Genyo Addon | Utility mod for Meteor Client',
+        default: 'Genyo Addon | Utility mod for Meteor Client',
     },
-    description: "Utility Meteor addon powered by special people's special minds.",
-    keywords: ["Minecraft", "Meteor", "Meteor Client", "Fabric", "Mod", "Modding", "Modded", "Hacked", "Client", "Anarchy", "2b2t", "9b9t"]
+    description: "The best PvP addon for Meteor Client, for Minecraft 1.21.11, featuring over 70+ modules.",
+    keywords: ["Minecraft", "Meteor", "Meteor Client", "Fabric", "Mod", "Modding", "Modded", "Hacked", "Client", "Anarchy", "2b2t", "9b9t", "Meteor Addon", "meteor addons"],
+    openGraph: {
+        title: "Genyo Addon | PvP addon for Meteor Client",
+        description: "The best PvP addon for Meteor Client, tailored for 9b9t and other anarchy servers.",
+        url: "https://genyo.dev",
+        siteName: "Genyo Addon",
+        images: [
+            {
+                url: "https://genyo.dev/opengraph-image.png",
+                width: 512,
+                height: 512,
+                alt: "Genyo Addon preview"
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Genyo Addon | Utility mod for Meteor Client",
+        description: "The best PvP addon for Meteor Client",
+        images: ["https://genyo.dev/opengraph-image.png"],
+    }
 };
 
 export default function RootLayout({

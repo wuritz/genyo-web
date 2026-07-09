@@ -1,5 +1,6 @@
 "use client";
 import React from 'react'
+import Image from "next/image";
 
 interface Props {
     username: string,
@@ -17,7 +18,7 @@ const TeamCard = ({ username, image, role }: Props) => {
         >
             <div className="flex items-center gap-4">
                 <div className={`relative w-20 h-20 border-2 ${hovering ? "border-white" : "border-black"} overflow-hidden flex-shrink-0`}>
-                    <img
+                    <Image
                         src={image}
                         alt={username}
                         width={200} height={200}

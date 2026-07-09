@@ -9,22 +9,23 @@ import {IoSparklesOutline} from "react-icons/io5";
 import {RiDownloadCloud2Line} from "react-icons/ri";
 import DownloadButton from "@/components/DownloadButton";
 import BlobCursor from "@/components/Home/hero/BlobCursor";
+import Link from "next/link";
 
 const HeroSec = () => {
     const { release, totalDownloads } = useLatestRelease();
 
     return (
         <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-            <BlobCursor />
+            <BlobCursor size={20} />
             <div className="relative z-10 max-w-6xl w-full">
 
                 <div className={"relative"}>
                     <div className="mb-12">
-                        <a href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
+                        <Link href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
                             <div className="inline-block border-2 border-white px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
                                 <span className="font-mono text-xs uppercase text-white">Latest version • {release ? release.tag_name : "unknown"}</span>
                             </div>
-                        </a>
+                        </Link>
 
                         <h1 className="flex mb-6 text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
                             Genyo Addon
@@ -33,7 +34,7 @@ const HeroSec = () => {
 
                         <div className="max-w-2xl mb-8">
                             <p className="text-md xl:text-xl leading-relaxed text-white">
-                                The best utility addon for <a className={"text-blue-500 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</a>,
+                                The best utility addon for <Link className={"text-blue-500 hover:underline cursor-pointer"} href={"https://meteorclient.com/"} target={"_blank"}>Meteor Client</Link>,
                                 filled with Shoreline and Genyo magic :D
                             </p>
                             <p className="text-sm xl:text-lg text-gray-300 mt-4">
@@ -42,8 +43,8 @@ const HeroSec = () => {
                         </div>
 
                         <div className="flex flex-wrap gap-4 mb-12">
-                            <DownloadButton invert={false} />
-                            <a href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
+                            <DownloadButton invert={false} navbar={false} />
+                            <Link href={"https://www.github.com/wuritz/genyo-addon"} target={"_blank"}>
                                 <Button
                                     size="lg"
                                     variant="outline"
@@ -52,8 +53,8 @@ const HeroSec = () => {
                                     <TbBrandGithub className="mr-2 h-4 w-4" />
                                     GITHUB
                                 </Button>
-                            </a>
-                            <a href={"/discord"} target={"_blank"}>
+                            </Link>
+                            <Link href={"/discord"} target={"_blank"}>
                                 <Button
                                     size="lg"
                                     variant="outline"
@@ -62,7 +63,7 @@ const HeroSec = () => {
                                     <FaDiscord className="mr-2 h-4 w-4" />
                                     DISCORD
                                 </Button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

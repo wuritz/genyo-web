@@ -1,7 +1,11 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 
-function BlobCursor() {
+type Props = {
+    size: number;
+}
+
+function BlobCursor({ size }: Props) {
     const rootRef = useRef<HTMLDivElement | null>(null);
     const blobWrapperRef = useRef<HTMLDivElement | null>(null);
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -138,7 +142,7 @@ function BlobCursor() {
                     <div
                         className="rounded-full bg-white"
                         style={{
-                            width: '34vmax',
+                            width: `${size}vmax`,
                             aspectRatio: '1',
                             animation: 'rotate 20s infinite linear'
                         }}

@@ -72,6 +72,7 @@ const ModulesSec = ({modules}: Props) => {
                             {filteredModules.map((module, index) => (
                                 <div
                                     key={index}
+                                    id={module.idForSEO}
                                     className="border-2 border-black p-5 bg-white hover:bg-black hover:text-white transition-colors group"
                                 >
                                     <h3 className="mb-2 font-mono text-sm">{module.name}</h3>

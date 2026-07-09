@@ -1,5 +1,6 @@
 import React from 'react'
 import TeamCard from "@/components/Home/team/team-card";
+import Link from "next/link";
 
 const TeamSec = () => {
     return (
@@ -11,15 +12,15 @@ const TeamSec = () => {
 
                 {/* Team Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
-                    <a href={"https://github.com/wuritz"} target={"_blank"}>
-                        <TeamCard username={"wuritz"} image={"images/wuritz.png"} role={"Lead Developer"}/>
-                    </a>
-                    <a href={"https://github.com/asdjrkxyz"} target={"_blank"}>
-                        <TeamCard username={"Barnika18"} image={"images/barnika.png"} role={"Co-Developer"} />
-                    </a>
-                    <a href={"https://github.com/Sleeepyv"} target={"_blank"}>
-                        <TeamCard username={"Awakeyv"} image={"images/awakeyv.png"} role={"Contributor / Updater"} />
-                    </a>
+                    <Link href={"https://github.com/wuritz"} target={"_blank"}>
+                        <TeamCard username={"wuritz"} image={"/images/wuritz.png"} role={"Lead Developer"}/>
+                    </Link>
+                    <Link href={"https://github.com/asdjrkxyz"} target={"_blank"}>
+                        <TeamCard username={"Barnika18"} image={"/images/barnika.png"} role={"Co-Developer"} />
+                    </Link>
+                    <Link href={"https://github.com/Sleeepyv"} target={"_blank"}>
+                        <TeamCard username={"Awakeyv"} image={"/images/awakeyv.png"} role={"Contributor / Updater"} />
+                    </Link>
                 </div>
             </div>
         </section>

@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Button} from "@/components/UI/button";
 import { TbBrandGithub } from "react-icons/tb";
 import {useLatestRelease} from "@/app/api/fetchGithub";
@@ -12,24 +12,36 @@ import BlobCursor from "@/components/Home/hero/BlobCursor";
 import Link from "next/link";
 
 const HeroSec = () => {
+    const [isMobile, setIsMobile] = useState(true);
     const { release, totalDownloads } = useLatestRelease();
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
 
     return (
         <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-            <BlobCursor size={20} />
+
+            {!isMobile && <BlobCursor size={20} />}
+
             <div className="relative z-10 max-w-6xl w-full">
 
                 <div className={"relative"}>
                     <div className="mb-12">
                         <Link href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>
                             <div className="inline-block border-2 border-white px-4 py-1 mb-4 xl:mb-8 hover:bg-gray-200 transition-all duration-200 cursor-pointer">
-                                <span className="font-mono text-xs uppercase text-white">Latest version • {release ? release.tag_name : "unknown"}</span>
+                                <span className="font-mono text-xs uppercase text-white">
+                                    Latest version • {release?.tag_name || "fetching.."}
+                                </span>
                             </div>
                         </Link>
 
-                        <h1 className="flex mb-6 text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
-                            Genyo Addon
-                            <IoSparklesOutline className={"ml-5"}/>
+                        <h1 className="mb-6 justify-center text-2xl xl:text-6xl bg-black text-white border-2 px-5 py-5 w-fit font-bold leading-none hover:bg-white hover:text-black transition-all duration-200">
+                            Genyo Addon <IoSparklesOutline className={"ml-5 inline"}/>
                         </h1>
 
                         <div className="max-w-2xl mb-8">

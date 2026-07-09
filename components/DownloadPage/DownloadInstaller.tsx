@@ -54,7 +54,7 @@ const DownloadInstaller = () => {
         <Button
             type="button"
             onClick={() => handleDownload()}
-            className="rounded-md bg-green-700 px-3 md:px-5 py-2 text-sm md:text-md hover:cursor-pointer font-semibold text-white inset-ring inset-ring-white/5 hover:bg-green-400/80 hover:border hover:border-white/50 transition-all duration-300"
+            className="rounded-md bg-green-700 px-3 md:px-5 py-2 text-sm md:text-md hover:cursor-pointer font-semibold text-white inset-ring inset-ring-white/5 hover:bg-green-400/80 hover:border transition-all duration-150"
         >
             Download Genyo Installer
         </Button>

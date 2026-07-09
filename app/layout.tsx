@@ -6,13 +6,13 @@ import React from "react";
 import FooterSec from "@/components/footer-sec";
 
 const font = Inter({
-    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+    weight: ['400', '500', '600', '700'],
     subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
     title: {
-        template: '%s - Genyo Addon | Utility mod for Meteor Client',
+        template: '%s - Genyo Addon',
         default: 'Genyo Addon | Utility mod for Meteor Client',
     },
     description: "The best PvP addon for Meteor Client, for Minecraft 1.21.11, featuring over 70+ modules.",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "https://genyo.dev/opengraph-image.png",
-                width: 512,
-                height: 512,
+                width: 1200,
+                height: 630,
                 alt: "Genyo Addon preview"
             },
         ],
@@ -38,6 +38,11 @@ export const metadata: Metadata = {
         title: "Genyo Addon | Utility mod for Meteor Client",
         description: "The best PvP addon for Meteor Client",
         images: ["https://genyo.dev/opengraph-image.png"],
+    },
+    metadataBase: new URL("https://genyo.dev"),
+    robots: {
+        index: true,
+        follow: true
     }
 };
 

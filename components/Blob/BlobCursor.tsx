@@ -84,8 +84,8 @@ function BlobCursor({ size }: Props) {
                     r: Math.random() * 1.5 + 0.5,
                     a: Math.random(),
                     da: (Math.random() - 0.5) * 0.02,
-                    dx: (Math.random() - 0.5) * 0.2,
-                    dy: (Math.random() - 0.5) * 0.2
+                    dx: (Math.random() - 0.5) * 0.3,
+                    dy: (Math.random() - 0.5) * 0.3
                 });
             }
         };

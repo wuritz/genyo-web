@@ -2,7 +2,6 @@
 import React from 'react'
 import {Button} from "@/components/UI/button";
 import { TbBrandGithub } from "react-icons/tb";
-import {useLatestRelease} from "@/app/api/fetchGithub";
 import {FaDiscord} from "react-icons/fa";
 import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
@@ -11,9 +10,15 @@ import DownloadButton from "@/components/DownloadButton";
 import BlobCursor from "@/components/Blob/BlobCursor";
 import Link from "next/link";
 
-const HeroSec = () => {
-    const { release, totalDownloads } = useLatestRelease();
+interface GithubAsset { download_count: number; }
+interface GithubRelease { tag_name: string; assets: GithubAsset[]; }
 
+type Props = {
+    release: GithubRelease | null;
+    totalDownloads: number;
+}
+
+const HeroSec = ({ release, totalDownloads }: Props) => {
     return (
         <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
             <BlobCursor size={20} />
@@ -69,9 +74,11 @@ const HeroSec = () => {
                     </div>
 
                     {/* Stats Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5">
                         <div className="border-2 border-white p-6 bg-white hover:bg-black hover:text-white transition-colors group">
-                            <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">{totalDownloads ?? "0"} <RiDownloadCloud2Line /></div>
+                            <div className="text-4xl font-mono mb-2 flex flex-1 items-center justify-between">
+                                {totalDownloads} <RiDownloadCloud2Line />
+                            </div>
                             <div className="text-sm uppercase font-mono text-gray-500 group-hover:text-gray-300">
                                 Downloads
                             </div>

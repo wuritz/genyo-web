@@ -58,7 +58,7 @@ export default function RootLayout({
                 <link rel="preconnect" href="https://api.github.com" crossOrigin="anonymous" />
             </head>
 
-            <body className={`${font.className} antialiased`}>
+            <body className={`bg-black ${font.className} antialiased`}>
                 <NavbarSec />
                 {children}
                 <FooterSec />

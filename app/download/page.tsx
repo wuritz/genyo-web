@@ -11,8 +11,26 @@ export const metadata: Metadata = {
 }
 
 const DownloadPage = () => {
+    const softwareSchema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Genyo Addon",
+        "operatingSystem": "Fabric (Minecraft 1.21.11)",
+        "applicationCategory": "UtilitiesApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "downloadUrl": "https://github.com/wuritz/genyo-addon/releases/latest"
+    }
+
     return (
         <div className={"min-h-screen scroll-smooth"}>
+            <script
+                type={"application/ld+json"}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+            />
             <section className={"relative flex flex-col"}>
                 <BlobCursor size={5} />
 

@@ -8,6 +8,7 @@ import FooterSec from "@/components/footer-sec";
 const font = Inter({
     weight: ['400', '500', '600', '700'],
     subsets: ["latin"],
+    display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -52,11 +53,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className={font.className}>
             <head>
-                <link rel="preconnect" href="https://avatars.githubusercontent.com" />
                 <link rel="preconnect" href="https://api.github.com" crossOrigin="anonymous" />
             </head>
+
             <body className={`${font.className} antialiased`}>
                 <NavbarSec />
                 {children}

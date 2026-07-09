@@ -53,6 +53,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+                <link rel="preconnect" href="https://api.github.com" crossOrigin="anonymous" />
+            </head>
             <body className={`${font.className} antialiased`}>
                 <NavbarSec />
                 {children}

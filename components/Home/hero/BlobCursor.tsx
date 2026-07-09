@@ -22,8 +22,7 @@ function BlobCursor({ size }: Props) {
         let isInside = false;
 
         const updatePosition = () => {
-            wrapper.style.left = `${pointerX}px`;
-            wrapper.style.top = `${pointerY}px`;
+            wrapper.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0) translate(-50%, -50%)`;
             frameId = null;
         };
 
@@ -52,13 +51,15 @@ function BlobCursor({ size }: Props) {
 
         window.addEventListener("pointermove", handlePointerMove, { passive: true });
 
+        updatePosition();
+
         return () => {
             window.removeEventListener("pointermove", handlePointerMove);
             if (frameId != null) cancelAnimationFrame(frameId);
         };
     }, []);
 
-    // night sky :3
+    // 2. Night sky logic (unchanged, looks great!)
     useEffect(() => {
         const canvas = canvasRef.current;
         const root = rootRef.current;
@@ -132,11 +133,10 @@ function BlobCursor({ size }: Props) {
             <div className="absolute inset-0 bg-black mix-blend-multiply">
                 <div
                     ref={blobWrapperRef}
-                    className="absolute opacity-0 transition-opacity duration-300 ease-in-out"
+                    className="absolute opacity-0 transition-opacity duration-300 ease-in-out will-change-transform"
                     style={{
-                        transform: 'translate(-50%, -50%)',
-                        left: '50%',
-                        top: '50%',
+                        top: 0,
+                        left: 0
                     }}
                 >
                     <div

@@ -89,14 +89,10 @@ const HeroSec = () => {
                         <div className="border-2 border-white p-6 bg-black text-white hover:bg-white hover:text-black transition-colors group flex flex-col items-start justify-between">
                             <div className="text-4xl font-mono mb-2">YES</div>
                             <div className="text-sm uppercase font-mono text-gray-300 group-hover:text-gray-500">
-                                It Works*
+                                It Works
                             </div>
                         </div>
                     </div>
-
-                    <p className="mt-4 text-sm text-gray-400 font-mono">
-                        *BUGS ARE CONSIDERED TO BE FEATURES AROUND HERE
-                    </p>
                 </div>
             </div>
         </div>

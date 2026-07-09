@@ -83,9 +83,9 @@ function BlobCursor({ size }: Props) {
                     y: Math.random() * canvas.height,
                     r: Math.random() * 1.5 + 0.5,
                     a: Math.random(),
-                    da: (Math.random() - 0.5) * 0.07,
-                    dx: (Math.random() - 0.5) * 0.8,
-                    dy: (Math.random() - 0.5) * 0.8
+                    da: (Math.random() - 0.5) * 0.02,
+                    dx: (Math.random() - 0.5) * 0.2,
+                    dy: (Math.random() - 0.5) * 0.2
                 });
             }
         };
@@ -128,7 +128,7 @@ function BlobCursor({ size }: Props) {
 
     return (
         <div ref={rootRef} className="absolute inset-0 overflow-hidden pointer-events-none z-0 bg-black">
-            <div id="gradient-color"></div>
+            <div id="gradient-color" className={"hidden md:block"}></div>
 
             <div className="hidden md:block absolute inset-0 bg-black mix-blend-multiply">
                 <div

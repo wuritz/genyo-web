@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import {Plus, Minus } from "lucide-react";
-import BlobCursor from "@/components/Home/hero/BlobCursor";
+import BlobCursor from "@/components/Blob/BlobCursor";
 import Link from "next/link";
 
 interface Item {

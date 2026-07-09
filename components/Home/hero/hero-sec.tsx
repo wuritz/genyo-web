@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Button} from "@/components/UI/button";
 import { TbBrandGithub } from "react-icons/tb";
 import {useLatestRelease} from "@/app/api/fetchGithub";
@@ -8,28 +8,17 @@ import { HiOutlineCog6Tooth } from "react-icons/hi2";
 import {IoSparklesOutline} from "react-icons/io5";
 import {RiDownloadCloud2Line} from "react-icons/ri";
 import DownloadButton from "@/components/DownloadButton";
-import BlobCursor from "@/components/Home/hero/BlobCursor";
+import BlobCursor from "@/components/Blob/BlobCursor";
 import Link from "next/link";
 
 const HeroSec = () => {
-    const [isMobile, setIsMobile] = useState(true);
     const { release, totalDownloads } = useLatestRelease();
-
-    useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth < 768);
-        checkMobile();
-        window.addEventListener("resize", checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
-    }, []);
-
 
     return (
         <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-
-            {!isMobile && <BlobCursor size={20} />}
+            <BlobCursor size={20} />
 
             <div className="relative z-10 max-w-6xl w-full">
-
                 <div className={"relative"}>
                     <div className="mb-12">
                         <Link href={"https://www.github.com/wuritz/genyo-addon/releases/latest"} target={"_blank"}>

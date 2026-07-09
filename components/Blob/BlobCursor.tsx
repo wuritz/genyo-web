@@ -27,6 +27,8 @@ function BlobCursor({ size }: Props) {
         };
 
         const handlePointerMove = (event: PointerEvent) => {
+            if (window.innerWidth < 768) return;
+
             const rect = root.getBoundingClientRect();
             const withinBounds =
                 event.clientY >= rect.top &&
@@ -50,7 +52,6 @@ function BlobCursor({ size }: Props) {
         };
 
         window.addEventListener("pointermove", handlePointerMove, { passive: true });
-
         updatePosition();
 
         return () => {
@@ -59,7 +60,7 @@ function BlobCursor({ size }: Props) {
         };
     }, []);
 
-    // 2. Night sky logic (unchanged, looks great!)
+    // night sky :3
     useEffect(() => {
         const canvas = canvasRef.current;
         const root = rootRef.current;
@@ -69,7 +70,6 @@ function BlobCursor({ size }: Props) {
         if (!ctx) return;
 
         let frameId: number;
-
         let stars: { x: number; y: number; r: number; a: number; da: number; dx: number; dy: number }[] = [];
 
         const resizeAndInit = () => {
@@ -130,14 +130,11 @@ function BlobCursor({ size }: Props) {
         <div ref={rootRef} className="absolute inset-0 overflow-hidden pointer-events-none z-0 bg-black">
             <div id="gradient-color"></div>
 
-            <div className="absolute inset-0 bg-black mix-blend-multiply">
+            <div className="hidden md:block absolute inset-0 bg-black mix-blend-multiply">
                 <div
                     ref={blobWrapperRef}
                     className="absolute opacity-0 transition-opacity duration-300 ease-in-out will-change-transform"
-                    style={{
-                        top: 0,
-                        left: 0
-                    }}
+                    style={{ top: 0, left: 0 }}
                 >
                     <div
                         className="rounded-full bg-white"
@@ -150,7 +147,7 @@ function BlobCursor({ size }: Props) {
                 </div>
             </div>
 
-            <div className="absolute inset-0 backdrop-blur-[8vmax]"></div>
+            <div className="hidden md:block absolute inset-0 backdrop-blur-[8vmax]"></div>
 
             <canvas ref={canvasRef} className="absolute inset-0 opacity-60 z-10"></canvas>
         </div>

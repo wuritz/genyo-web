@@ -3,7 +3,7 @@ import React from "react";
 import DownloadGitHub from "@/components/DownloadPage/DownloadGitHub";
 import DownloadInstaller from "@/components/DownloadPage/DownloadInstaller";
 import Link from "next/link";
-import BlobCursor from "@/components/Home/hero/BlobCursor";
+import BlobCursor from "@/components/Blob/BlobCursor";
 
 export const metadata: Metadata = {
     title: "Download",
@@ -15,6 +15,7 @@ const DownloadPage = () => {
         <div className={"min-h-screen scroll-smooth"}>
             <section className={"relative flex flex-col"}>
                 <BlobCursor size={5} />
+
                 <div className="relative min-h-screen flex flex-1 items-center justify-center pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0">
                     <div className={"max-w-[67%]"}>
                         <h1 className={"text-3xl xl:text-6xl text-white font-bold mb-2 mt-5 md:mt-25"}>

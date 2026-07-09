@@ -11,7 +11,12 @@ interface GithubRelease { tag_name: string; assets: GithubAsset[]; }
 
 async function getGithubStats() {
     try {
-        const headers = { Accept: "application/vnd.github+json" };
+        const headers = {
+            Accept: "application/vnd.github+json",
+            ...(process.env.GH_API_TOKEN && {
+                Authorization: `Bearer ${process.env.GH_API_TOKEN}`
+            })
+        };
 
         // Fetch latest release and CACHE it for 3600 seconds (1 hour)
         const latestRes = await fetch(

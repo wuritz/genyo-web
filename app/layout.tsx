@@ -16,11 +16,11 @@ export const metadata: Metadata = {
         template: '%s - Genyo Addon',
         default: 'Genyo Addon | Utility mod for Meteor Client',
     },
-    description: "The best PvP addon for Meteor Client, for Minecraft 1.21.11, featuring over 70+ modules.",
+    description: "The best PvP addon for Meteor Client using Minecraft 1.21.11, with over 1400+ downloads, featuring over 70+ modules.",
     keywords: ["Minecraft", "Meteor", "Meteor Client", "Fabric", "Mod", "Modding", "Modded", "Hacked", "Client", "Anarchy", "2b2t", "9b9t", "Meteor Addon", "meteor addons"],
     openGraph: {
         title: "Genyo Addon | PvP addon for Meteor Client",
-        description: "The best PvP addon for Meteor Client, tailored for 9b9t and other anarchy servers.",
+        description: "The best PvP addon for Meteor Client with over 1400+ downloads, tailored for 9b9t and other anarchy servers.",
         url: "https://genyo.dev",
         siteName: "Genyo Addon",
         images: [

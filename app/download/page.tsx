@@ -46,13 +46,33 @@ const DownloadPage = () => {
 
                         <div className={"flex flex-col md:flex-row md:justify-between gap-10"}>
                             <section className={"flex-1 flex flex-col"}>
+                                <h2 className={"text-3xl font-semibold text-white/90 mb-2 ml-2"}>
+                                    Download from GitHub
+                                </h2>
+
+                                <div className={"flex-1 bg-gray-500/10 p-5 border-white/20 hover:border-white/40 border rounded-xl transition-all duration-150"}>
+
+                                    <p className={"mb-5"}>The quickest and the most reliable way to download Genyo.</p>
+
+                                    <p className={"mt-5"}>After downloading the .jar file, here&#39;s what you need to do:</p>
+                                    <ol className={"list-decimal ml-7 mt-2 mb-10 md:mb-15 text-sm md:text-base"}>
+                                        <li>Locate your <code className="rounded inline bg-gray-800 px-1.5 py-0.5 font-mono text-sm text-pink-400">mods</code> folder in your specific launcher. (Prism, MC launcher, etc..)</li>
+                                        <li>Drop the <code className="rounded inline bg-gray-800 px-1.5 py-0.5 font-mono text-sm text-pink-400">genyo-addon-*.jar</code> file into the folder alongside Meteor Client and Fabric.</li>
+                                        <li>Launch Minecraft and open the Meteor GUI in-game to configure.</li>
+                                    </ol>
+
+                                    <DownloadGitHub />
+                                </div>
+                            </section>
+
+                            <section className={"flex-1 flex flex-col"}>
                                 <h2 className={"text-xl xl:text-3xl font-semibold text-white/90 mb-2 xl:ml-2"}>
                                     Download using Genyo Installer
                                 </h2>
 
                                 <div className={"flex-1 bg-gray-500/10 p-5 border-white/20 hover:border-white/40 border rounded-xl transition-all duration-300"}>
 
-                                    <p className={"text-md"}>If you&#39;re new and not familiar with installing mods, then the Genyo Installer is for you!</p>
+                                    <p className={"text-md"}>If you&#39;d like to try out a fun little launcher we made, download the Genyo!</p>
 
                                     <p className={"mt-5"}>Our installer automates the sometimes confusing process of manual drag & drop.</p>
                                     <ul className={"list-disc ml-7 mt-2 mb-5 md:mb-15 text-sm md:text-base"}>
@@ -75,31 +95,11 @@ const DownloadPage = () => {
 
                                 </div>
                             </section>
-
-                            <section className={"flex-1 flex flex-col"}>
-                                <h2 className={"text-3xl font-semibold text-white/90 mb-2 ml-2"}>
-                                    Download from GitHub
-                                </h2>
-
-                                <div className={"flex-1 bg-gray-500/10 p-5 border-white/20 hover:border-white/40 border rounded-xl transition-all duration-150"}>
-
-                                    <p className={"mb-5"}>If you know what you&#39;re doing, or you need Genyo immediately, or you just simply want to use good old GitHub!</p>
-
-                                    <p className={"mt-5"}>After downloading the .jar file, here&#39;s what you need to do:</p>
-                                    <ol className={"list-decimal ml-7 mt-2 mb-10 md:mb-15 text-sm md:text-base"}>
-                                        <li>Locate your <code className="rounded inline bg-gray-800 px-1.5 py-0.5 font-mono text-sm text-pink-400">mods</code> folder in your specific launcher. (Prism, MC launcher, etc..)</li>
-                                        <li>Drop the <code className="rounded inline bg-gray-800 px-1.5 py-0.5 font-mono text-sm text-pink-400">genyo-addon-*.jar</code> file into the folder alongside Meteor Client and Fabric.</li>
-                                        <li>Launch Minecraft and open the Meteor GUI in-game to configure.</li>
-                                    </ol>
-
-                                    <DownloadGitHub />
-                                </div>
-                            </section>
                         </div>
 
                         <p className={"text-sm mt-10 mb-10 md:mb-0"}>
                             Clicking on the download buttons fetches the latest GitHub releases of the repos respectively. <br />
-                            You can check out <Link href={"https://github.com/wuritz/genyo-installer"} className={"text-blue-400 underline"}> this whole website&#39;s </Link> download process and even <Link href={"https://github.com/wuritz/genyo-installer"} className={"text-blue-400 underline"}>the installer</Link> on GitHub, so you know you won&#39;t have anything suspicious installed.
+                            You can check out <Link href={"https://github.com/wuritz/genyo-web"} className={"text-blue-400 underline"}> this whole website&#39;s </Link> download process and even <Link href={"https://github.com/wuritz/genyo-installer"} className={"text-blue-400 underline"}>the installer</Link> on GitHub, so you know you won&#39;t have anything suspicious installed.
                         </p>
 
                     </div>

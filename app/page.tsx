@@ -7,7 +7,7 @@ const HomePage = () => {
         "@type": "SoftwareApplication",
         "name": "Genyo Addon",
         "url": "https://genyo.dev",
-        "description": "The best PvP addon for Meteor Client, for Minecraft 1.21.11, featuring over 70+ modules.",
+        "description": "The best PvP addon for Meteor Client using Minecraft 1.21.11, with over 1400+ downloads, featuring over 70+ modules.",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Windows, macOS, Linux",
         "softwareVersion": "1.21.11",

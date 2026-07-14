@@ -3,8 +3,9 @@ import HeroSec from "@/components/Home/hero/hero-sec";
 import ModulesSec from "@/components/Home/modules-sec";
 import {genyoModules} from "@/app/api/genyo/genyoData";
 import WhySec from "@/components/Home/why-sec";
-import DownloadSec from "@/components/download-sec";
+import BlackCookieSec from "@/components/black-cookie-sec";
 import TeamSec from "@/components/Home/team-sec";
+import ChangelogsSec from "@/components/Changelogs/changelogs-sec";
 
 interface GithubAsset { download_count: number; }
 interface GithubRelease { tag_name: string; assets: GithubAsset[]; }
@@ -77,7 +78,7 @@ export default async function Home() {
                 <ModulesSec modules={genyoModules} />
                 <WhySec />
                 <TeamSec />
-                <DownloadSec />
+                <BlackCookieSec />
             </section>
         </div>
     )

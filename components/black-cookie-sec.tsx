@@ -6,7 +6,7 @@ import {FaDiscord} from "react-icons/fa";
 import DownloadButton from "@/components/DownloadButton";
 import Link from "next/link";
 
-const DownloadSec = () => {
+const BlackCookieSec = () => {
     return (
         <section className="border-t-4 border-black">
             {/* CTA Section */}
@@ -50,4 +50,4 @@ const DownloadSec = () => {
             </div>
         </section>    )
 }
-export default DownloadSec
+export default BlackCookieSec

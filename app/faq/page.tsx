@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqSec from "@/components/FAQ/faq-sec";
-import DownloadSec from "@/components/download-sec";
+import BlackCookieSec from "@/components/black-cookie-sec";
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ const FaqPage = () => {
             />
             <section className={"relative flex flex-col"}>
                 <FaqSec />
-                <DownloadSec />
+                <BlackCookieSec />
             </section>
         </div>
     )

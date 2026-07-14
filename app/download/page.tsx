@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import React from "react";
-import DownloadGitHub from "@/components/DownloadPage/DownloadGitHub";
 import DownloadInstaller from "@/components/DownloadPage/DownloadInstaller";
 import Link from "next/link";
-import BlobCursor from "@/components/Blob/BlobCursor";
+import DownloadGitHub from "@/components/DownloadPage/DownloadGitHub";
 
 export const metadata: Metadata = {
     title: "Download",
@@ -31,9 +30,8 @@ const DownloadPage = () => {
                 type={"application/ld+json"}
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
             />
-            <section className={"relative flex flex-col"}>
-                <BlobCursor size={5} />
 
+            <section className={"relative flex flex-col mx-auto"}>
                 <div className="relative min-h-screen flex flex-1 items-center justify-center pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0">
                     <div className={"max-w-[67%]"}>
                         <h1 className={"text-3xl xl:text-6xl text-white font-bold mb-2 mt-5 md:mt-25"}>
@@ -72,7 +70,7 @@ const DownloadPage = () => {
 
                                 <div className={"flex-1 bg-gray-500/10 p-5 border-white/20 hover:border-white/40 border rounded-xl transition-all duration-300"}>
 
-                                    <p className={"text-md"}>If you&#39;d like to try out a fun little launcher we made, download the Genyo!</p>
+                                    <p className={"text-md"}>If you&#39;d like to try out a fun little launcher we made, download the Genyo Installer!</p>
 
                                     <p className={"mt-5"}>Our installer automates the sometimes confusing process of manual drag & drop.</p>
                                     <ul className={"list-disc ml-7 mt-2 mb-5 md:mb-15 text-sm md:text-base"}>

@@ -21,7 +21,7 @@ type Props = {
 const HeroSec = ({ release, totalDownloads }: Props) => {
     return (
         <div className={"relative overflow-hidden flex flex-1 items-center justify-center min-h-screen pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0"}>
-            <BlobCursor size={20} />
+            <BlobCursor size={5} />
 
             <div className="relative z-10 max-w-6xl w-full">
                 <div className={"relative"}>

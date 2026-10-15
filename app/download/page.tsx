@@ -31,6 +31,7 @@ const DownloadPage = () => {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
             />
 
+
             <section className={"relative flex flex-col mx-auto"}>
                 <div className="relative min-h-screen flex flex-1 items-center justify-center pt-30 xl:pt-8 pl-6 pr-6 xl:pl-0 xl:pr-0">
                     <div className={"max-w-[67%]"}>
